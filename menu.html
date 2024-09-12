@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marise Conversions</title>
+</head>
+<body>
+    <button onclick="TelaDecimal()">Decimal</button>
+    <button onclick="TelaOctal()">Octal</button>
+    <button onclick="TelaBinario()">Binário</button>
+    <button onclick="TelaHexadecimal()">Hexadecimal</button>
+
+    <div id="div_principal"></div>
+    <div id="div_mensagem"></div>
+
+</body>
+</html>
+
+<script>
+    var valor = 0;
+    function TelaDecimal() {
+        
+        
+        div_principal.innerHTML = (`<div class="class_linhaum">
+            <h4>Digite o valor decimal:</h4>
+            <input type="text" placeholder="Digite o valor em decimal" id="ipt_Decimal">
+        </div>
+
+        <div class="class_escolha">
+            <button onclick="ExibirOctal()">Octal</button>
+            <button onclick="ExibirHexadecimal()">Hexadecimal</button>
+            <button onclick="ExibirBinario()">Binário</button>
+        </div>
+
+        `)
+    }
+
+    // function ConversorDecimal(){
+
+    //     var decimal = Number(ipt_Decimal.value);
+    //     let binario = decimal.toString(2);
+    //     let hexadecimal = decimal.toString(16);
+    //     let Octal = decimal.toString(8);
+        
+    //     function ExibirOctal(){
+    //         div_mensagem.innerHTML = `${Octal}`;
+    //     }
+
+
+    // }
+
+
+    function TelaOctal() {
+        
+        div_principal.innerHTML = (`<div class="class_linhaum">
+            <h4>Digite o valor octal:</h4>
+            <input type="text" placeholder="Digite o valor em octal" id="ipt_Octal">
+        </div>
+
+        <div class="class_escolha">
+            <button onclick="ExibirDecimal()">Decimal</button>
+            <button onclick="ExibirHexadecimal()">Hexadecimal</button>
+            <button onclick="ExibirBinario()">Binário</button>
+        </div>`)
+
+
+    }
+
+    function TelaBinario() {
+        
+        div_principal.innerHTML = (`<div class="class_linhaum">
+            <h4>Digite o valor binário:</h4>
+            <input type="text" placeholder="Digite o valor em binário" id="ipt_Decimal">
+        </div>
+
+        <div class="class_escolha">
+            <button onclick="ExibirOctal()">Octal</button>
+            <button onclick="ExibirHexadecimal()">Hexadecimal</button>
+            <button onclick="ExibirDecimal()">Decimal</button>
+        </div>
+
+        <div id="div_mensagem"></div>`)
+
+    }
+
+    function TelaHexadecimal() {
+        
+        div_principal.innerHTML = (`<div class="class_linhaum">
+            <h4>Digite o valor hexadecimal:</h4>
+            <input type="text" placeholder="Digite o valor em hexadecimal" id="ipt_Decimal">
+        </div>
+
+        <div class="class_escolha">
+            <button onclick="ExibirDecimal()">Decimal</button>
+            <button onclick="ExibirOctal()">Octal</button>
+            <button onclick="ExibirBinario()">Binário</button>
+        </div>`)
+
+    }
+
+    function ExibirOctal() {
+        var decimal = Number(ipt_Decimal.value);
+        let binario = decimal.toString(2);
+        let hexadecimal = decimal.toString(16);
+        let Octal = decimal.toString(8);
+
+        div_mensagem.innerHTML = (`${Octal}`)
+    }
+
+    function ExibirDecimal() {
+        var decimal = Number(ipt_Decimal.value);
+        let binario = decimal.toString(2);
+        let hexadecimal = decimal.toString(16);
+        let Octal = decimal.toString(8);
+
+        div_mensagem.innerHTML = (`${decimal}`)
+    }
+
+    function ExibirHexadecimal() {
+        var decimal = Number(ipt_Decimal.value);
+        let binario = decimal.toString(2);
+        let hexadecimal = decimal.toString(16);
+        let Octal = decimal.toString(8);
+
+        div_mensagem.innerHTML = (`${hexadecimal}`)
+    }
+
+    function ExibirBinario() {
+        var decimal = Number(ipt_Decimal.value);
+        let binario = decimal.toString(2);
+        let hexadecimal = decimal.toString(16);
+        let Octal = decimal.toString(8);
+
+        div_mensagem.innerHTML = (`${binario}`)
+    }
+</script>
