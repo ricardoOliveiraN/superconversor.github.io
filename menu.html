@@ -18,7 +18,6 @@
 </html>
 
 <script>
-    var valor = 0;
     function TelaDecimal() {
         
         
@@ -31,9 +30,8 @@
             <button onclick="ExibirOctal()">Octal</button>
             <button onclick="ExibirHexadecimal()">Hexadecimal</button>
             <button onclick="ExibirBinario()">Binário</button>
-        </div>
-
-        `)
+        </div>`)
+        div_mensagem.innerHTML = ''
     }
 
     // function ConversorDecimal(){
@@ -62,7 +60,8 @@
             <button onclick="ExibirDecimal()">Decimal</button>
             <button onclick="ExibirHexadecimal()">Hexadecimal</button>
             <button onclick="ExibirBinario()">Binário</button>
-        </div>`)
+            </div>`)
+            div_mensagem.innerHTML = ''
 
 
     }
@@ -78,9 +77,8 @@
             <button onclick="ExibirOctal()">Octal</button>
             <button onclick="ExibirHexadecimal()">Hexadecimal</button>
             <button onclick="ExibirDecimal()">Decimal</button>
-        </div>
-
-        <div id="div_mensagem"></div>`)
+        </div>`)
+        div_mensagem.innerHTML = ''
 
     }
 
@@ -95,14 +93,13 @@
             <button onclick="ExibirDecimal()">Decimal</button>
             <button onclick="ExibirOctal()">Octal</button>
             <button onclick="ExibirBinario()">Binário</button>
-        </div>`)
+            </div>`)
+            div_mensagem.innerHTML = ''
 
     }
 
     function ExibirOctal() {
         var decimal = Number(ipt_Decimal.value);
-        let binario = decimal.toString(2);
-        let hexadecimal = decimal.toString(16);
         let Octal = decimal.toString(8);
 
         div_mensagem.innerHTML = (`${Octal}`)
@@ -119,9 +116,7 @@
 
     function ExibirHexadecimal() {
         var decimal = Number(ipt_Decimal.value);
-        let binario = decimal.toString(2);
         let hexadecimal = decimal.toString(16);
-        let Octal = decimal.toString(8);
 
         div_mensagem.innerHTML = (`${hexadecimal}`)
     }
@@ -129,8 +124,6 @@
     function ExibirBinario() {
         var decimal = Number(ipt_Decimal.value);
         let binario = decimal.toString(2);
-        let hexadecimal = decimal.toString(16);
-        let Octal = decimal.toString(8);
 
         div_mensagem.innerHTML = (`${binario}`)
     }
