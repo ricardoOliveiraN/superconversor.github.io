@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="class_principal" id="div_principal">
+
+        
+
+        <div class="class_linhaUm">
+            <h3>MARISE'S MACHINE</h3>
+        </div>
+        <div class="class_linhaDois">
+            <button onclick="mostrarOpcoes()">CONVERSÕES</button> <br>
+            <button onclick="mostrarTutorial()">TUTORIAIS</button> <br>
+        </div>
+        <div class="class_linhaTres">   
+            
+            <div id="div_opcoes"></div>
+            <div id="div_tutoriais"></div>
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
+<script>
+
+    function mostrarOpcoes(){
+
+        div_opcoes.innerHTML = `<h3>Sua base inicial é:</h3>
+
+        <button onclick="baseHexadecimal()">HEXADECIMAL</button> <br>
+        <button onclick="baseDecimal()">DECIMAL</button> <br>
+        <button onclick="baseBinaria()">BINÁRIO</button> <br>
+        <button onclick="baseOctal()">OCTAL</button> <br>        
+
+        `
+    }
+    function mostrarTutorial(){
+
+        div_tutoriais.innerHTML = `<h3>TUTORIAL UM:</h3>
+        <h3> TUTORIAL DOIS: </h3>
+        `
+    }
+    
+
+
+
+</script>
