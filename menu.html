@@ -15,6 +15,54 @@
         font-weight: 300;
         font-style: normal;
     }
+
+    .class_principal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid;
+        border-radius: 10px;
+        width: 500px;
+        height: 400px;
+    } 
+
+    .class_linhaUm {
+        display: flex;
+        margin-top: -400px;
+        margin-left: 150px;
+    }
+    .class_linhaDois {
+        display: flex;
+        margin-left: 80px;
+    }
+
+    button {
+        font-family: "Fira Code", monospace;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 1px;
+    }
+
+    #btn_tutorial {
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 2px 0px 2px 2px;
+        background-color: #CE1C26;
+    }
+
+    #btn_opcoes {
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 2px 0px 2px 2px;
+        margin-right: 30px;
+        background-color: #315BA1;
+    }
 </style>
 <body>
     <div class="class_principal" id="div_principal"></div>
@@ -24,8 +72,8 @@
         </div>
 
         <div class="class_linhaDois" id="div_linhaDois">
-            <button onclick="mostrarOpcoes()">CONVERSÕES</button> <br>
-            <button onclick="mostrarTutorial()">TUTORIAIS</button> <br>
+            <button onclick="mostrarOpcoes()" id="btn_opcoes">CONVERSÕES</button> <br>
+            <button onclick="mostrarTutorial()" id="btn_tutorial">TUTORIAIS</button> <br>
         </div>
 
         <div class="class_linhaTres" id="div_linhaTres">   
@@ -221,26 +269,26 @@
         div_mensagem.innerHTML = (`${decimal}`)
     }
 
-
+        // TRANSFORMANDO O NÚMERO HEXADECIMAL EM DECIMAL
     function HexadecimalDecimal() {
         var hexadecimal = ipt_Hexadecimal.value
         let decimal = parseInt(hexadecimal, 16)
         
         div_mensagem.innerHTML = (`${decimal}`)
     }
-
+        // TRANSFORMANDO O NÚMERO HEXADECIMAL EM OCTAL
     function HexadecimalOctal() {
         var hexadecimal = ipt_Hexadecimal.value
-        let decimal = parseInt(hexadecimal, 16)
-        let octal = decimal.toString(8)
+        let decimal = parseInt(hexadecimal, 16) // Transformando o número hexadecimal em decimal
+        let octal = decimal.toString(8) // Transformando o número decimal em octal
 
         div_mensagem.innerHTML = (`${octal}`)
     }
-
+        // TRANSFORMANDO O NÚMERO HEXADECIMAL EM BINARIO
     function HexadecimalBinario() {
         var hexadecimal = ipt_Hexadecimal.value
-        let decimal = parseInt(hexadecimal, 16)
-        let binario = decimal.toString(2)
+        let decimal = parseInt(hexadecimal, 16) // Transformando o número hexadecimal em decimal
+        let binario = decimal.toString(2) // Transformando o número decimal em binário
 
         div_mensagem.innerHTML = (`${binario}`)
     }
