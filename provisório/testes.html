@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        background-color: gray;
+    }
+
+    .classe_visiveis{
+
+        height: 32px;
+        width: 128px;
+        border: 2px solid blue;
+        display: block;
+    }
+    .classe_invisiveis{
+        height: 160px;
+        width: 160px;
+        border: 2px solid blue;
+        display: none;
+    }
+    #div_principal{
+
+        height: 760;
+        width: 808px;
+        border: 2px solid rgb(0, 0, 0);
+        display: block;
+
+    }
+    #div_converterPara{
+        
+        height: 192px;
+        width: 344px;
+        border: 2px solid blue;
+        display: none;
+    }
+</style>
+
+<body>
+
+    <div id="div_principal">
+
+        <div id="div_titulo"> 
+            <h1>MARISE'S MACHINE</h1> 
+        </div>
+
+        <div class="classe_visiveis" id="div_converter">
+            <button onclick="baseDesejada()">CONVERSÕES</button>
+        </div>
+
+        <div class="classe_visiveis" id="div_tutorial">
+            <button onclick="exibirTutorial()">TUTORIAIS</button>
+        </div>
+
+        <div class="classe_invisiveis" id="div_baseDesejada">
+            <h3>Sua base inicial é:</h3>
+            <button onclick="converterHexadecimalPara()">Hexadecimal</button><br>
+            <button onclick="converterDecimalPara()">Decimal</button><br>
+            <button>Binário</button><br>
+            <button>Octal</button><br>
+        
+        </div>
+
+        <div class="classe_invisiveis" id="div_exibirTutorial"> 
+            <h3>Link:</h3>
+            <h3>Link:</h3>
+            <h3>Link:</h3>
+            <h3>Link:</h3>
+        </div>
+
+        <div id="div_converterPara">
+            
+
+            <h2>Digite o número:</h2> <input type="text"> <br>
+            <button id="btn_hexadecimal">Hexadecimal</button>   
+            <button id="btn_decimal">Decimal</button> 
+            <button id="btn_binario">Binário</button> 
+            <button id="btn_octal">Octal</button> 
+            <button onclick="voltarHome()">Voltar</button> 
+
+
+        </div>
+
+
+    </div>
+
+
+
+    
+</body>
+</html>
+
+<script>
+
+    function baseDesejada(){
+
+        div_baseDesejada.style.display = 'block';
+
+    }
+
+    function exibirTutorial(){
+        div_exibirTutorial.style.display = 'block';
+    }
+    function converterHexadecimalPara(){
+
+        div_baseDesejada.style.display = 'none';
+        div_exibirTutorial.style.display = 'none';
+        div_converter.style.display = 'none';
+        div_tutorial.style.display = 'none'
+        div_converterPara.style.display = 'block';
+        btn_hexadecimal.style.display = 'none';
+    }
+    function converterDecimalPara(){
+
+        div_baseDesejada.style.display = 'none';
+        div_exibirTutorial.style.display = 'none';
+        div_converter.style.display = 'none';
+        div_tutorial.style.display = 'none'
+        div_converterPara.style.display = 'block';
+        btn_decimal.style.display = 'none';
+    }
+
+</script>
