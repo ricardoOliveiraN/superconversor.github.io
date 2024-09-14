@@ -41,6 +41,13 @@
         border: 2px solid blue;
         display: none;
     }
+    #div_calcular{
+        height: 192px;
+        width: 344px;
+        border: 2px solid blue;
+        display: none;
+    }
+
     /* #div_tutorial{
         margin: -36px 0px 0px 150px;
     }
@@ -61,26 +68,34 @@
         <div class="classe_visiveis" id="div_opcoesIniciais">
             <button onclick="baseDesejada()">CONVERSÕES</button>
             <button onclick="operacaoAritmetica()">OPERAÇÕES ARITMÉTICAS</button>
-            <button onclick="exibirTutorial()">TUTORIAIS</button>
+            <!-- <button onclick="exibirTutorial()">TUTORIAIS</button> -->
         </div>
 
-        <div class="classe_invisiveis" id="div_baseDesejada">
-            <h3>Sua base inicial é:</h3>
-            <button onclick="converterHexadecimalPara()">Hexadecimal</button><br>
-            <button onclick="converterDecimalPara()">Decimal</button><br>
-            <button onclick="converterBinarioPara()">Binário</button><br>
-            <button onclick="converterOctalPara()">Octal</button><br>
-        
+        <div id="div_opcoesSecundarias">
+            <div class="classe_invisiveis" id="div_baseDesejada">
+                <h3>Sua base inicial é:</h3>
+                <button onclick="converterHexadecimalPara()">Hexadecimal</button><br>
+                <button onclick="converterDecimalPara()">Decimal</button><br>
+                <button onclick="converterBinarioPara()">Binário</button><br>
+                <button onclick="converterOctalPara()">Octal</button><br>
+            
+            </div>
+            <div class="classe_invisiveis" id="div_baseDesejadaCalculo">
+                <h3>Sua base inicial é:</h3>
+                <button onclick="calcularHexadecimal()">Hexadecimal</button><br>
+                <button onclick="calcularDecimal()">Decimal</button><br>
+                <button onclick="calcularBinario()">Binário</button><br>
+                <button onclick="calcularOctal()">Octal</button><br>
+            </div>
+            <!-- <div class="classe_invisiveis" id="div_exibirTutorial"> 
+                <h3>Link:</h3>
+                <h3>Link:</h3>
+                <h3>Link:</h3>
+                <h3>Link:</h3>
+            </div> -->
         </div>
 
-        <div class="classe_invisiveis" id="div_exibirTutorial"> 
-            <h3>Link:</h3>
-            <h3>Link:</h3>
-            <h3>Link:</h3>
-            <h3>Link:</h3>
-        </div>
-
-        <div id="div_converterPara">
+        <div id="div_converterPara"><!--Outra tela / conversões -->
             
 
             <h2>Digite o número:</h2> <input id="inp_valorInserido" type="text"> <br>
@@ -92,12 +107,23 @@
 
             <div id="div_resultado"></div>
         
+         </div>
+
+         <div id="div_calcular"><!--Outra tela / cálculos -->
             
 
+            <h2>Digite o primeiro número:</h2> <input id="inp_primeiroValor" type="text"> <br>
+            <h2>Digite o segundo número:</h2> <input id="inp_segundoValor" type="text"> <br>
+            <button id="btn_hexadecimal" onclick="Multiplicar()">Multiplicar</button>   
+            <button id="btn_decimal" onclick="Subtrair()">Subtrair</button> 
+            <button id="btn_binario" onclick="Dividir()">Dividir</button> 
+            <button id="btn_octal" onclick="Somar()">Somar</button> 
+            <button onclick="voltarHome()">Voltar</button> 
 
-        </div>
-
-
+            <div id="div_resultadoCalculo"></div>
+        
+         </div>
+        
     </div>
 
 
@@ -108,9 +134,16 @@
 
 <script>
 
+var SouHexadecimal = 0;
+
     function baseDesejada(){
 
         div_baseDesejada.style.display = 'block';
+
+    }
+    function operacaoAritmetica(){
+
+        div_baseDesejadaCalculo.style.display = 'block';
 
     }
 
@@ -145,11 +178,66 @@
     function converterOctalPara(){
         
         div_baseDesejada.style.display = 'none';
-        div_exibirTutorial.style.display = 'none';
+        // div_exibirTutorial.style.display = 'none';
         div_opcoesIniciais.style.display = 'none';
         div_converterPara.style.display = 'block';
         btn_octal.style.display = 'none';
     }
+
+    function calcularHexadecimal(){
+
+        div_baseDesejada.style.display = 'none';
+        // div_exibirTutorial.style.display = 'none';
+        div_opcoesIniciais.style.display = 'none';
+        div_converterPara.style.display = 'none';
+        div_baseDesejadaCalculo.style.display = 'none';
+        div_calcular.style.display = 'block';
+        SouHexadecimal += 1;
+    }
+
+    function Somar(){
+
+        var PrimeiroValor = inp_primeiroValor.value;
+        var SegundoValor = inp_segundoValor.value;
+        var Soma = 0;
+        alert('cheguei aqui')
+
+        if (SouHexadecimal == 1){
+            alert('cheguei aqui dois')
+
+            let decimalUm = parseInt (PrimeiroValor, 16);
+            let decimalDois = parseInt (SegundoValor, 16);
+
+            if (isNaN(decimalUm) || isNaN(decimalDois)){
+                div_resultado.innerHTML = 'valor inserido está incorreto'
+            }else{
+
+                Soma = decimalUm + decimalDois;
+
+                let resultadoHexadecimal = Soma.toString(16);
+                let resultadoBinario = Soma.toString(2);
+                let resultadoOctal = Soma.toString(8);
+                let resultadoDecimal = Soma;
+
+                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                    Hexadecimal: ${resultadoHexadecimal}.<br>
+                    Binario: ${resultadoBinario}.<br>
+                    Decimal: ${resultadoDecimal}.<br>
+                    Octal: ${resultadoOctal}.`
+
+            }
+
+        }
+
+
+    }
+
+
+
+
+
+
+
     function paraHexadecimal(){
         var ValorInserido = inp_valorInserido.value;  
         alert('veio ate aqui')
