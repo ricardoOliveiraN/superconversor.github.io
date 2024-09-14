@@ -37,9 +37,9 @@
         width: 800px;
         height: 400px;
         margin: 10px 0px 0px 30px;
-        box-shadow: 3px 3px 20px 2px;
-        background-color: gray;
-        color: white;
+        box-shadow: 3px 3px 10px 2px;
+        background-color: #8a8a8a;
+        /* color: white; */
     }
 
     .class_opcoestemas {
@@ -47,6 +47,23 @@
         align-items: center;
         justify-content: center;
     }   
+
+    #btn_mario {
+        border: 2px solid; 
+        border-radius: 10px; 
+        background-color: white; 
+        margin-right: 10px;
+    }
+
+    #btn_luigi {
+        border: 2px solid; 
+        border-radius: 10px; 
+        background-color: white;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
     
     .class_principal {
         display: block;
@@ -94,7 +111,6 @@
         background-color: #315BA1;
         margin: 0px 30px 0px 0px;
     }
-
     
     #btn_temas {
         display: flex;
@@ -233,14 +249,14 @@
         margin: 0px 0px 0px 0px;
     }
 
-    .class_tutoriais {
+    /* .class_tutoriais {
         display: block;
         align-items: center;
         justify-content: center;
-        /* border: 1px solid; */
+        border: 1px solid; 
         margin: 0px 0px 0px 280px;
         position: fixed;
-    }
+    } */
 
     #lbl_TutorialUm {
         font-size: 20px;
@@ -414,8 +430,8 @@
         <p style="margin: 19px 0px 0px 151px; font-weight: 600; font-size: 20px;">TEMAS:</p>
 
         <div class="class_opcoestemas" id="div_opcoestemas">
-            <button onclick="Mario()" style="border: 2px solid; border-radius: 10px; background-color: white; margin-right: 10px;"><img src="mario.png" alt="" style="width: 100px; height: 200px;"></button>
-            <button onclick="Luigi()" style="border: 2px solid; border-radius: 10px; background-color: white;"><img src="luigi.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_mario" onclick="Mario()"><img src="mario.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_luigi" onclick="Luigi()"><img src="luigi.png" alt="" style="width: 100px; height: 200px;"></button>
         </div>
         
     </div>
@@ -439,10 +455,10 @@
                 <button onclick="TelaOctal()" id="btn_TelaOctal">OCTAL</button> <br>
             </div>
 
-            <div class="class_tutoriais" id="div_tutoriais" style="display: none;">
+            <!-- <div class="class_tutoriais" id="div_tutoriais" style="display: none;">
                 <p id="lbl_TutorialUm">TUTORIAL UM:</p>
                 <p id="lbl_TutorialDois">TUTORIAL DOIS:</p> 
-            </div>
+            </div> -->
         </div>
 
     </div>
@@ -583,7 +599,7 @@
     }
 
     function mostrarTutorial() {
-        div_tutoriais.style.display = 'block';
+        // div_tutoriais.style.display = 'block';
         div_videoUm.style.display = 'block';
         div_principal.style.display = 'none';
         div_videos.style.display = 'block';
@@ -621,7 +637,7 @@
         div_mensagem.innerHTML = ''
         div_principal.style.display = 'block';
         div_opcoes.style.display = 'none';
-        div_tutoriais.style.display = 'none';
+        // div_tutoriais.style.display = 'none';
         div_TelaHexadecimal.style.display = 'none';
         div_TelaDecimal.style.display = 'none';
         div_TelaBinario.style.display = 'none';
