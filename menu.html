@@ -427,7 +427,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 58px 0px 0px 195px;
+        margin: 58px 0px 0px 30px;
         border: 1px solid;
         box-shadow: 3px 3px 20px 2px;
         border-radius: 10px;
@@ -456,8 +456,8 @@
         <p style="margin: 19px 0px 0px 151px; font-weight: 600; font-size: 20px;">TEMAS:</p>
 
         <div class="class_opcoestemas" id="div_opcoestemas">
-            <button id="btn_mario" onclick="Mario()"><img src="mario.png" alt="" style="width: 100px; height: 200px;"></button>
-            <button id="btn_luigi" onclick="Luigi()"><img src="luigi.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_mario" onclick="Mario()"><img src="imagens/mario.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_luigi" onclick="Luigi()"><img src="imagens/luigi.png" alt="" style="width: 100px; height: 200px;"></button>
         </div>
         
     </div>
@@ -491,7 +491,7 @@
 
     <div class="class_TelaHexadecimal" id="div_TelaHexadecimal" style="display: none;">
         <div class="class_cabecalho">
-            <button id="btn_home" onclick="VoltarHome()"><img src="home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
             <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
@@ -510,7 +510,7 @@
 
     <div class="class_TelaDecimal" id="div_TelaDecimal" style="display: none;">
         <div class="class_cabecalho">
-            <button id="btn_home" onclick="VoltarHome()"><img src="home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
             <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
@@ -529,7 +529,7 @@
     
     <div class="class_TelaBinario" id="div_TelaBinario" style="display: none;">
         <div class="class_cabecalho">
-            <button id="btn_home" onclick="VoltarHome()"><img src="home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
             <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
@@ -548,7 +548,7 @@
 
     <div class="class_TelaOctal" id="div_TelaOctal" style="display: none;">
         <div class="class_cabecalho">
-            <button id="btn_home" onclick="VoltarHome()"><img src="home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
             <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
@@ -568,7 +568,7 @@
     <div class="class_videos" id="div_videos" style="display: none;">
 
         <div class="class_cabecalho" style="margin: 0px 0px 20px 328px;">
-            <button id="btn_home" onclick="VoltarHome()" style="margin: 10px 200px 0px 0px;"><img src="home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()" style="margin: 10px 200px 0px 0px;"><img src="imagens/home.png" id="img_home"></button>
             <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
@@ -593,22 +593,29 @@
     <div id="div_mensagem" style="font-weight: 600;"></div>
 
     <div class="class_contatos" id="div_contatos">
-        <p style="font-size: 18px;">Developed by</p>
+
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <p style="font-size: 18px; margin-right: 10px;">Developed with</p>
+            <img src="imagens/java-script.png" style="width: 20px;">
+            <img src="imagens/html.png" style="width: 20px;">
+            <img src="imagens/css-3.png" style="width: 20px; margin-right: 10px;">
+            <p style="font-size: 18px;">by</p> 
+        </div>
 
         <div class="class_nomes" id="div_nomes">
 
             <div class="class_izael" id="div_izael">
                 <p style="margin-right: 20px;">Izael Junior</p>
-                <button style="border: none; margin-right: 10px;"><a href="https://github.com/oizaeljr" target="_blank"><img src="github.png" alt="" style="width: 20px;"></a></button>
-                <button style="border: none; margin-right: 10px;"><a href="https://www.linkedin.com/in/oizaeljunior/" target="_blank"><img src="linkedin.png" alt="" style="width: 20px;"></a></button>
-                <button style="border: none;"><a href="mailto:izael.oliveirajr@sptech.school?subject=Assunto%20do%20Email&body=Corpo%20do%20Email" target="_blank"><img src="email.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none; margin-right: 10px;"><a href="https://github.com/oizaeljr" target="_blank"><img src="imagens/github.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none; margin-right: 10px;"><a href="https://www.linkedin.com/in/oizaeljunior/" target="_blank"><img src="imagens/linkedin.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none;"><a href="mailto:izael.oliveirajr@sptech.school?subject=Assunto%20do%20Email&body=Corpo%20do%20Email" target="_blank"><img src="imagens/email.png" alt="" style="width: 20px;"></a></button>
             </div>
             
             <div class="class_ricardo" id="div_ricardo">
                 <p style="margin-right: 20px;">Ricardo de Oliveira</p>
-                <button style="border: none; margin-right: 10px;"><a href="https://github.com/ricardoOliveiraN" target="_blank"><img src="github.png" alt="" style="width: 20px;"></a></button>
-                <button style="border: none; margin-right: 10px;"><a href="" target="_blank"><img src="linkedin.png" alt="" style="width: 20px;"></a></button>
-                <button style="border: none;"><a href="mailto:ricardo.nicolau@sptech.school?subject=Assunto%20do%20Email&body=Corpo%20do%20Email" target="_blank"><img src="email.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none; margin-right: 10px;"><a href="https://github.com/ricardoOliveiraN" target="_blank"><img src="imagens/github.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none; margin-right: 10px;"><a href="" target="_blank"><img src="imagens/linkedin.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none;"><a href="mailto:ricardo.nicolau@sptech.school?subject=Assunto%20do%20Email&body=Corpo%20do%20Email" target="_blank"><img src="imagens/email.png" alt="" style="width: 20px;"></a></button>
             </div>
 
         </div>
