@@ -135,6 +135,11 @@
 <script>
 
 var SouHexadecimal = 0;
+var SouDecimal = 0;
+var SouBinario = 0;
+var SouOctal = 0;
+
+
 
     function baseDesejada(){
 
@@ -194,6 +199,40 @@ var SouHexadecimal = 0;
         div_calcular.style.display = 'block';
         SouHexadecimal += 1;
     }
+    function calcularDecimal(){
+
+        div_baseDesejada.style.display = 'none';
+        // div_exibirTutorial.style.display = 'none';
+        div_opcoesIniciais.style.display = 'none';
+        div_converterPara.style.display = 'none';
+        div_baseDesejadaCalculo.style.display = 'none';
+        div_calcular.style.display = 'block';
+        SouDecimal += 1;
+    }
+
+    function calcularBinario(){
+
+        div_baseDesejada.style.display = 'none';
+        // div_exibirTutorial.style.display = 'none';
+        div_opcoesIniciais.style.display = 'none';
+        div_converterPara.style.display = 'none';
+        div_baseDesejadaCalculo.style.display = 'none';
+        div_calcular.style.display = 'block';
+        SouBinario += 1;
+    }
+    function calcularOctal(){
+
+        div_baseDesejada.style.display = 'none';
+        // div_exibirTutorial.style.display = 'none';
+        div_opcoesIniciais.style.display = 'none';
+        div_converterPara.style.display = 'none';
+        div_baseDesejadaCalculo.style.display = 'none';
+        div_calcular.style.display = 'block';
+        SouOctal += 1;
+    }
+
+
+
 
     function Somar(){
 
@@ -227,6 +266,78 @@ var SouHexadecimal = 0;
 
             }
 
+        }else if (SouDecimal == 1){
+            alert('cheguei aqui dois')
+
+            let decimalUm = parseInt (PrimeiroValor, 10);
+            let decimalDois = parseInt (SegundoValor, 10);
+
+            if (isNaN(decimalUm) || isNaN(decimalDois)){
+                div_resultado.innerHTML = 'valor inserido está incorreto'
+            }else{
+
+                Soma = decimalUm + decimalDois;
+
+                let resultadoHexadecimal = Soma.toString(16);
+                let resultadoBinario = Soma.toString(2);
+                let resultadoOctal = Soma.toString(8);
+                let resultadoDecimal = Soma;
+
+                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                    Hexadecimal: ${resultadoHexadecimal}.<br>
+                    Binario: ${resultadoBinario}.<br>
+                    Decimal: ${resultadoDecimal}.<br>
+                    Octal: ${resultadoOctal}.`
+
+            }   
+        }else if (SouBinario == 1){
+            alert('cheguei aqui dois')
+
+            let decimalUm = parseInt (PrimeiroValor, 2);
+            let decimalDois = parseInt (SegundoValor, 2);
+
+            if (isNaN(decimalUm) || isNaN(decimalDois)){
+                div_resultado.innerHTML = 'valor inserido está incorreto'
+            }else{
+
+                Soma = decimalUm + decimalDois;
+
+                let resultadoHexadecimal = Soma.toString(16);
+                let resultadoBinario = Soma.toString(2);
+                let resultadoOctal = Soma.toString(8);
+                let resultadoDecimal = Soma;
+
+                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                    Hexadecimal: ${resultadoHexadecimal}.<br>
+                    Binario: ${resultadoBinario}.<br>
+                    Decimal: ${resultadoDecimal}.<br>
+                    Octal: ${resultadoOctal}.`
+
+            }   
+        }else if (SouOctal == 1){
+            alert('cheguei aqui dois')
+
+            let decimalUm = parseInt (PrimeiroValor, 8);
+            let decimalDois = parseInt (SegundoValor, 8);
+
+            if (isNaN(decimalUm) || isNaN(decimalDois)){
+                div_resultado.innerHTML = 'valor inserido está incorreto'
+            }else{
+
+                Soma = decimalUm + decimalDois;
+
+                let resultadoHexadecimal = Soma.toString(16);
+                let resultadoBinario = Soma.toString(2);
+                let resultadoOctal = Soma.toString(8);
+                let resultadoDecimal = Soma;
+
+                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                    Hexadecimal: ${resultadoHexadecimal}.<br>
+                    Binario: ${resultadoBinario}.<br>
+                    Decimal: ${resultadoDecimal}.<br>
+                    Octal: ${resultadoOctal}.`
+
+            }   
         }
 
 
