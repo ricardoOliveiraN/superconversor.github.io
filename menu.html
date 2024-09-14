@@ -27,15 +27,38 @@
     button {
         cursor: pointer;
     }
+
+    .class_temas {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid;
+        border-radius: 10px;
+        width: 800px;
+        height: 400px;
+        margin: 10px 0px 0px 30px;
+        box-shadow: 3px 3px 20px 2px;
+        background-color: gray;
+        color: white;
+    }
+
+    .class_opcoestemas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
     .class_principal {
         display: block;
         align-items: center;
         justify-content: center;
-        border: 1px solid;
+        border: 3px solid;
         border-radius: 10px;
         width: 800px;
         height: 400px;
+        margin: 10px 0px 0px 30px;
+        box-shadow: 3px 3px 20px 2px;
+        background-color: #F3C11F;
     } 
 
     #lbl_titulo {
@@ -67,9 +90,25 @@
         width: 150px;
         height: 40px;
         border-radius: 10px;
-        box-shadow: 2px 0px 2px 2px;
+        box-shadow: 3px 3px 1px 0px;
         background-color: #315BA1;
         margin: 0px 120px 0px 0px;
+    }
+
+    #btn_temas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Fira Code", monospace;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 1px 0px;
+        background-color: white;
+        margin: 0px 0px 0px 0px;
     }
 
     #btn_tutorial {
@@ -83,7 +122,7 @@
         width: 150px;
         height: 40px;
         border-radius: 10px;
-        box-shadow: 2px 0px 2px 2px;
+        box-shadow: 3px 3px 1px 0px;
         background-color: #CE1C26;
         margin: 0px 0px 0px 120px;
     }
@@ -124,8 +163,8 @@
         width: 150px;
         height: 40px;
         border-radius: 10px;
-        box-shadow: 2px 0px 2px 2px;
-        background-color: #F3C11F;
+        box-shadow: 3px 3px 1px 0px;
+        background-color: white;
         margin: 0px 0px 0px 0px;
     }
 
@@ -140,7 +179,7 @@
         width: 150px;
         height: 40px;
         border-radius: 10px;
-        box-shadow: 2px 0px 2px 2px;
+        box-shadow: 3px 3px 1px 0px;
         background-color: white;
         margin: 0px 0px 0px 0px;
     }
@@ -156,8 +195,8 @@
         width: 150px;
         height: 40px;
         border-radius: 10px;
-        box-shadow: 2px 0px 2px 2px;
-        background-color: #F3C11F;
+        box-shadow: 3px 3px 1px 0px;
+        background-color: white;
         margin: 0px 0px 0px 0px;
     }
 
@@ -172,7 +211,7 @@
         width: 150px;
         height: 40px;
         border-radius: 10px;
-        box-shadow: 2px 0px 2px 2px;
+        box-shadow: 3px 3px 1px 0px;
         background-color: white;
         margin: 0px 0px 0px 0px;
     }
@@ -201,7 +240,7 @@
         display: flex;
         align-items: center;
         justify-content: left;
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 20px 80px;
     }
 
     #btn_home {
@@ -210,6 +249,9 @@
         justify-content: center;
         width: 60px;
         margin: 10px 20px 0px 0px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 1px 0px;
+        background-color: white;
     }
 
     #img_home {
@@ -224,64 +266,149 @@
         font-size: 16px;
         font-family: "Fira Code", monospace;
         font-optical-sizing: auto;
-        box-shadow: 1px 0px 1px 1px;
+        box-shadow: 3px 3px 1px 0px;
     }  
+
+    .class_TelaHexadecimal {
+        margin: 10px 0px 0px 30px;
+        border: 3px solid;
+        border-radius: 10px;
+        width: 500px;
+        height: 250px;
+        box-shadow: 3px 3px 20px 2px;
+        background-color: #F3C11F;
+    }
 
     .class_TelaHexadecimal button {
         width: 100px;
         height: 40px;
         border-radius: 5px;
-        box-shadow: 1px 0px 1px 1px;
+        box-shadow: 3px 3px 1px 0px;
         font-size: 16px;
         font-family: "Fira Code", monospace;
         font-optical-sizing: auto;
         background-color: white;
         margin: 10px 0px 0px 3px;
+    }
+
+    .class_TelaDecimal {
+        margin: 10px 0px 0px 30px;
+        border: 3px solid;
+        border-radius: 10px;
+        width: 500px;
+        height: 250px;
+        box-shadow: 3px 3px 20px 2px;
+        background-color: #F3C11F;
     }
 
     .class_TelaDecimal button {
         width: 100px;
         height: 40px;
         border-radius: 5px;
-        box-shadow: 1px 0px 1px 1px;
+        box-shadow: 3px 3px 1px 0px;
         font-size: 16px;
         font-family: "Fira Code", monospace;
         font-optical-sizing: auto;
         background-color: white;
         margin: 10px 0px 0px 3px;
+    }
+
+    .class_TelaBinario {
+        margin: 10px 0px 0px 30px;
+        border: 3px solid;
+        border-radius: 10px;
+        width: 500px;
+        height: 250px;
+        box-shadow: 3px 3px 20px 2px;
+        background-color: #F3C11F;
     }
 
     .class_TelaBinario button {
         width: 100px;
         height: 40px;
         border-radius: 5px;
-        box-shadow: 1px 0px 1px 1px;
+        box-shadow: 3px 3px 1px 0px;
         font-size: 16px;
         font-family: "Fira Code", monospace;
         font-optical-sizing: auto;
         background-color: white;
         margin: 10px 0px 0px 3px;
+    }
+
+    .class_TelaOctal {
+        margin: 10px 0px 0px 30px;
+        border: 3px solid;
+        border-radius: 10px;
+        width: 500px;
+        height: 250px;
+        box-shadow: 3px 3px 20px 2px;
+        background-color: #F3C11F;
     }
 
     .class_TelaOctal button {
         width: 100px;
         height: 40px;
         border-radius: 5px;
-        box-shadow: 1px 0px 1px 1px;
+        box-shadow: 3px 3px 1px 0px;
         font-size: 16px;
         font-family: "Fira Code", monospace;
         font-optical-sizing: auto;
         background-color: white;
         margin: 10px 0px 0px 3px;
     }
+
+    #div_mensagem {
+        margin: -35px 0px 0px 110px;
+    }     
+
+    .class_videos {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid;
+        border-radius: 10px;
+        width: 1500px;
+        height: 487px;
+        margin: 10px 0px 0px 30px;
+        box-shadow: 3px 3px 20px 2px;
+        background-color: #F3C11F;
+    }
+
+    .class_videos2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0px 0px 0px;
+    }
+
+    .class_videoUm {
+        margin: 0px 125px 0px 0px;
+    }
+    
+    .class_videoDois {
+        margin: 0px 0px 0px 0px;
+    }
 </style>
 
 <body>
-    <div class="class_principal" id="div_principal">
+
+    <div class="class_temas" id="div_temas">
         <p id="lbl_titulo">MARISE'S MACHINE</p>
+        <p style="margin: 19px 0px 0px 151px; font-weight: 600; font-size: 20px;">TEMAS:</p>
+
+        <div class="class_opcoestemas" id="div_opcoestemas">
+            <button onclick="Mario()" style="border: 2px solid; border-radius: 10px; background-color: white; margin-right: 10px;"><img src="mario.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button onclick="Luigi()" style="border: 2px solid; border-radius: 10px; background-color: white;"><img src="luigi.png" alt="" style="width: 100px; height: 200px;"></button>
+        </div>
+        
+    </div>
+
+    <div class="class_principal" id="div_principal" style="display: none;">
+        <p id="lbl_titulo">MARIO'S MACHINE</p>
 
         <div class="class_linhaDois" id="div_linhaDois">
             <button onclick="mostrarOpcoes()" id="btn_opcoes">CONVERSÕES</button> <br>
+            <button onclick="TelaTema()" id="btn_temas">ESCOLHER TEMA</button>
             <button onclick="mostrarTutorial()" id="btn_tutorial">TUTORIAIS</button> <br>
         </div>
 
@@ -305,15 +432,15 @@
     <div class="class_TelaHexadecimal" id="div_TelaHexadecimal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARISE'S MACHINE</p>
+            <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
-        <div>
+        <div style="margin-left: 75px;">
             <p style="font-size: 20px; font-weight: 500;">Digite o valor hexadecimal:</p>
             <input type="text" placeholder="Digite o valor em hexadecimal" id="ipt_Hexadecimal">
         </div>
         
-        <div class="class_escolha">
+        <div class="class_escolha" style="margin-left: 72px;">
             <button onclick="HexadecimalDecimal()">Decimal</button>
             <button onclick="HexadecimalOctal()">Octal</button>
             <button onclick="HexadecimalBinario()">Binário</button>
@@ -324,17 +451,17 @@
     <div class="class_TelaDecimal" id="div_TelaDecimal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARISE'S MACHINE</p>
+            <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
-        <div>
+        <div style="margin-left: 75px;">
             <p style="font-size: 20px; font-weight: 500;">Digite o valor decimal:</p>
             <input type="text" placeholder="Digite o valor em decimal" id="ipt_Decimal">
         </div>
     
-        <div class="class_escolha">
+        <div class="class_escolha" style="margin-left: 72px;">
             <button onclick="DecimalOctal()">Octal</button>
-            <button onclick="DecimalHexadecimal()">Hexadecimal</button>
+            <button onclick="DecimalHexadecimal()" style="width: 120px;">Hexadecimal</button>
             <button onclick="DecimalBinario()">Binário</button>
         </div>
 
@@ -343,17 +470,17 @@
     <div class="class_TelaBinario" id="div_TelaBinario" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARISE'S MACHINE</p>
+            <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
-        <div>
+        <div style="margin-left: 75px;">
             <p style="font-size: 20px; font-weight: 500;">Digite o valor binário:</p>
             <input type="text" placeholder="Digite o valor em binário" id="ipt_Binario">
         </div>
         
-        <div class="class_escolha">
+        <div class="class_escolha" style="margin-left: 72px;">
             <button onclick="BinarioOctal()">Octal</button>
-            <button onclick="BinarioHexadecimal()">Hexadecimal</button>
+            <button onclick="BinarioHexadecimal()" style="width: 120px;">Hexadecimal</button>
             <button onclick="BinarioDecimal()">Decimal</button>
         </div>
 
@@ -362,35 +489,81 @@
     <div class="class_TelaOctal" id="div_TelaOctal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARISE'S MACHINE</p>
+            <p id="lbl_titulo">MARIO'S MACHINE</p>
         </div>
 
-        <div>
+        <div style="margin-left: 75px;">
             <p style="font-size: 20px; font-weight: 500;">Digite o valor octal:</p>
             <input type="text" placeholder="Digite o valor em octal" id="ipt_Octal">
         </div>
     
-        <div class="class_escolha">
+        <div class="class_escolha" style="margin-left: 72px;">
             <button onclick="OctalDecimal()">Decimal</button>
-            <button onclick="OctalHexadecimal()">Hexadecimal</button>
+            <button onclick="OctalHexadecimal()" style="width: 120px;">Hexadecimal</button>
             <button onclick="OctalBinario()">Binário</button>
         </div>
 
     </div>
 
-    <div id="div_mensagem"></div>
+    <div class="class_videos" id="div_videos" style="display: none;">
+
+        <div class="class_cabecalho" style="margin: 0px 0px 20px 328px;">
+            <button id="btn_home" onclick="VoltarHome()" style="margin: 10px 200px 0px 0px;"><img src="home.png" id="img_home"></button>
+            <p id="lbl_titulo">MARIO'S MACHINE</p>
+        </div>
+
+        <div class="class_videos2" id="div_videos2">
+
+            <div class="class_videoUm" id="div_videoUm"><p style="font-size: 20px; font-weight: 500;">HEXADECIMAL x DECIMAL x BINÁRIO</p>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/Vctnbk0RWVY?si=nHV-DCb8qH1STguE" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        
+            <div class="class_videoDois" id="div_videoDois"><p style="font-size: 20px; font-weight: 500;">HEXADECIMAL x DECIMAL x BINÁRIO</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qf5NJmnWqtw?si=mYHIvCOSWVuQY3zd" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="div_mensagem" style="font-weight: 600;"></div>
 
 </body>
 </html>
 
 <script>
+    function Mario() {
+        btn_opcoes.style.backgroundColor = "#315BA1";
+        btn_tutorial.style.backgroundColor = "#CE1C26";
+        div_temas.style.display = 'none';
+        div_principal.style.display = 'block';
+    }
+
+    function Luigi() {
+        btn_opcoes.style.backgroundColor = "#34A853";
+        btn_tutorial.style.backgroundColor = "#1A3D85";
+        div_temas.style.display = 'none';
+        div_principal.style.display = 'block';
+    }
     
     function mostrarOpcoes() {
         div_opcoes.style.display = 'block';    
     }
 
+    function TelaTema() {
+        div_principal.style.display = 'none';
+        div_temas.style.display = 'block';
+    }
+
     function mostrarTutorial() {
         div_tutoriais.style.display = 'block';
+        div_videoUm.style.display = 'block';
+        div_principal.style.display = 'none';
+        div_videos.style.display = 'block';
     }
 
     function TelaHexadecimal() {
@@ -430,6 +603,7 @@
         div_TelaDecimal.style.display = 'none';
         div_TelaBinario.style.display = 'none';
         div_TelaOctal.style.display = 'none';
+        div_videos.style.display = 'none';
     }
 
         // TRANSFORMANDO O NÚMERO DECIMAL EM OCTAL
