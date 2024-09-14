@@ -46,7 +46,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    }   
     
     .class_principal {
         display: block;
@@ -92,9 +92,10 @@
         border-radius: 10px;
         box-shadow: 3px 3px 1px 0px;
         background-color: #315BA1;
-        margin: 0px 120px 0px 0px;
+        margin: 0px 30px 0px 0px;
     }
 
+    
     #btn_temas {
         display: flex;
         align-items: center;
@@ -107,7 +108,23 @@
         height: 40px;
         border-radius: 10px;
         box-shadow: 3px 3px 1px 0px;
-        background-color: white;
+        background-color: #CE1C26;
+        margin: 0px 30px 0px 0px;
+    }
+    
+    #btn_operacoes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Fira Code", monospace;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 1px 0px;
+        background-color: #315BA1;
         margin: 0px 0px 0px 0px;
     }
 
@@ -124,7 +141,7 @@
         border-radius: 10px;
         box-shadow: 3px 3px 1px 0px;
         background-color: #CE1C26;
-        margin: 0px 0px 0px 120px;
+        margin: 0px 0px 0px 30px;
     }
 
     .class_linhaTres {
@@ -409,6 +426,7 @@
         <div class="class_linhaDois" id="div_linhaDois">
             <button onclick="mostrarOpcoes()" id="btn_opcoes">CONVERSÕES</button> <br>
             <button onclick="TelaTema()" id="btn_temas">ESCOLHER TEMA</button>
+            <button onclick="mostrarOperacoes()" id="btn_operacoes">OPERACÕES</button> <br>
             <button onclick="mostrarTutorial()" id="btn_tutorial">TUTORIAIS</button> <br>
         </div>
 
@@ -538,6 +556,8 @@
 <script>
     function Mario() {
         btn_opcoes.style.backgroundColor = "#315BA1";
+        btn_temas.style.backgroundColor = "#CE1C26";
+        btn_operacoes.style.backgroundColor = "#315BA1";
         btn_tutorial.style.backgroundColor = "#CE1C26";
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
@@ -545,6 +565,8 @@
 
     function Luigi() {
         btn_opcoes.style.backgroundColor = "#34A853";
+        btn_temas.style.backgroundColor = "#1A3D85";
+        btn_operacoes.style.backgroundColor = "#34A853";
         btn_tutorial.style.backgroundColor = "#1A3D85";
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
@@ -555,6 +577,7 @@
     }
 
     function TelaTema() {
+        div_opcoes.style.display = 'none';
         div_principal.style.display = 'none';
         div_temas.style.display = 'block';
     }
