@@ -37,7 +37,7 @@
         width: 800px;
         height: 400px;
         margin: 10px 0px 0px 30px;
-        box-shadow: 3px 3px 10px 2px;
+        box-shadow: 3px 3px 3px 3px;
         background-color: #8a8a8a;
         /* color: white; */
     }
@@ -74,11 +74,11 @@
         width: 800px;
         height: 400px;
         margin: 10px 0px 0px 30px;
-        box-shadow: 3px 3px 20px 2px;
+        box-shadow: 3px 3px 3px 3px;
         background-color: #F3C11F;
     } 
 
-    #lbl_titulo {
+    #div_titulo1, #div_titulo2, #div_titulo3, #div_titulo4, #div_titulo5, #div_titulo6, #div_titulo7 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -308,7 +308,7 @@
         border-radius: 10px;
         width: 500px;
         height: 250px;
-        box-shadow: 3px 3px 20px 2px;
+        box-shadow: 3px 3px 3px 3px;
         background-color: #F3C11F;
     }
 
@@ -330,7 +330,7 @@
         border-radius: 10px;
         width: 500px;
         height: 250px;
-        box-shadow: 3px 3px 20px 2px;
+        box-shadow: 3px 3px 3px 3px;
         background-color: #F3C11F;
     }
 
@@ -352,7 +352,7 @@
         border-radius: 10px;
         width: 500px;
         height: 250px;
-        box-shadow: 3px 3px 20px 2px;
+        box-shadow: 3px 3px 3px 3px;
         background-color: #F3C11F;
     }
 
@@ -374,7 +374,7 @@
         border-radius: 10px;
         width: 500px;
         height: 250px;
-        box-shadow: 3px 3px 20px 2px;
+        box-shadow: 3px 3px 3px 3px;
         background-color: #F3C11F;
     }
 
@@ -403,7 +403,7 @@
         width: 1500px;
         height: 487px;
         margin: 10px 0px 0px 30px;
-        box-shadow: 3px 3px 20px 2px;
+        box-shadow: 3px 3px 3px 3px;
         background-color: #F3C11F;
     }
 
@@ -429,7 +429,7 @@
         justify-content: center;
         margin: 58px 0px 0px 30px;
         border: 1px solid;
-        box-shadow: 3px 3px 20px 2px;
+        box-shadow: 3px 3px 3px 3px;
         border-radius: 10px;
         width: 500px;
     }
@@ -452,8 +452,8 @@
 <body>
 
     <div class="class_temas" id="div_temas">
-        <p id="lbl_titulo">MARISE'S MACHINE</p>
-        <p style="margin: 19px 0px 0px 151px; font-weight: 600; font-size: 20px;">TEMAS:</p>
+        <div id="div_titulo1">MARISE'S MACHINE</div>
+        <p style="margin: 19px 0px 20px 310px; font-weight: 600; font-size: 20px;">ESCOLHA O TEMA:</p>
 
         <div class="class_opcoestemas" id="div_opcoestemas">
             <button id="btn_mario" onclick="Mario()"><img src="imagens/mario.png" alt="" style="width: 100px; height: 200px;"></button>
@@ -463,7 +463,7 @@
     </div>
 
     <div class="class_principal" id="div_principal" style="display: none;">
-        <p id="lbl_titulo">MARIO'S MACHINE</p>
+        <div id="div_titulo2">MARIO'S MACHINE</div>
 
         <div class="class_linhaDois" id="div_linhaDois">
             <button onclick="mostrarOpcoes()" id="btn_opcoes">CONVERSÕES</button> <br>
@@ -492,7 +492,7 @@
     <div class="class_TelaHexadecimal" id="div_TelaHexadecimal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARIO'S MACHINE</p>
+            <div id="div_titulo3">MARIO'S MACHINE</div>
         </div>
 
         <div style="margin-left: 75px;">
@@ -511,7 +511,7 @@
     <div class="class_TelaDecimal" id="div_TelaDecimal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARIO'S MACHINE</p>
+            <div id="div_titulo4">MARIO'S MACHINE</div>
         </div>
 
         <div style="margin-left: 75px;">
@@ -530,7 +530,7 @@
     <div class="class_TelaBinario" id="div_TelaBinario" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARIO'S MACHINE</p>
+            <div id="div_titulo5">MARIO'S MACHINE</div>
         </div>
 
         <div style="margin-left: 75px;">
@@ -549,7 +549,7 @@
     <div class="class_TelaOctal" id="div_TelaOctal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARIO'S MACHINE</p>
+            <div id="div_titulo6">MARIO'S MACHINE</div>
         </div>
 
         <div style="margin-left: 75px;">
@@ -569,7 +569,7 @@
 
         <div class="class_cabecalho" style="margin: 0px 0px 20px 328px;">
             <button id="btn_home" onclick="VoltarHome()" style="margin: 10px 200px 0px 0px;"><img src="imagens/home.png" id="img_home"></button>
-            <p id="lbl_titulo">MARIO'S MACHINE</p>
+            <div id="div_titulo7">MARIO'S MACHINE</div>
         </div>
 
         <div class="class_videos2" id="div_videos2">
@@ -633,6 +633,12 @@
         btn_tutorial.style.backgroundColor = "#CE1C26";
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
+        div_titulo2.innerHTML = `MARIO'S MACHINE`;
+        div_titulo3.innerHTML = `MARIO'S MACHINE`;
+        div_titulo4.innerHTML = `MARIO'S MACHINE`;
+        div_titulo5.innerHTML = `MARIO'S MACHINE`;
+        div_titulo6.innerHTML = `MARIO'S MACHINE`;
+        div_titulo7.innerHTML = `MARIO'S MACHINE`;
     }
 
     function Luigi() {
@@ -642,6 +648,12 @@
         btn_tutorial.style.backgroundColor = "#1A3D85";
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
+        div_titulo2.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo3.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo4.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo5.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo6.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo7.innerHTML = `LUIGI'S MACHINE`;
     }
     
     function mostrarOpcoes() {
