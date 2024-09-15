@@ -105,7 +105,7 @@
         justify-content: center;
         font-weight: 650;
         font-size: 25px;
-        margin: 10px 0px 0px 0px;
+        margin: 10px 0px 10px 0px;
         /* border: 1px solid; */
     }
 
@@ -114,7 +114,7 @@
         align-items: center;
         justify-content: center;
         /* border: 1px solid; */
-        margin: 20px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
     }
 
     #btn_opcoes {
@@ -285,7 +285,7 @@
         display: flex;
         align-items: center;
         justify-content: left;
-        margin: 0px 0px 20px 80px;
+        margin: 0px 0px 20px 50px;
     }
 
     #btn_home {
@@ -293,13 +293,13 @@
         align-items: center;
         justify-content: center;
         width: 60px;
-        margin: 10px 20px 0px 0px;
+        margin: 0px 20px 0px 0px;
         border-radius: 10px;
         box-shadow: 3px 3px 1px 0px;
         background-color: white;
     }
 
-    #img_home {
+    #img_home1, #img_home2, #img_home3, #img_home4, #img_home5 {
         width: 30px;
         margin: 0px 0px 0px 0px;
     }
@@ -515,7 +515,7 @@
 
     <div class="class_TelaHexadecimal" id="div_TelaHexadecimal" style="display: none;">
         <div class="class_cabecalho">
-            <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home1"></button>
             <div id="div_titulo3"></div>
         </div>
 
@@ -534,7 +534,7 @@
 
     <div class="class_TelaDecimal" id="div_TelaDecimal" style="display: none;">
         <div class="class_cabecalho">
-            <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home2"></button>
             <div id="div_titulo4"></div>
         </div>
 
@@ -553,7 +553,7 @@
     
     <div class="class_TelaBinario" id="div_TelaBinario" style="display: none;">
         <div class="class_cabecalho">
-            <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home3"></button>
             <div id="div_titulo5"></div>
         </div>
 
@@ -572,7 +572,7 @@
 
     <div class="class_TelaOctal" id="div_TelaOctal" style="display: none;">
         <div class="class_cabecalho">
-            <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home4"></button>
             <div id="div_titulo6"></div>
         </div>
 
@@ -592,7 +592,7 @@
     <div class="class_videos" id="div_videos" style="display: none;">
 
         <div class="class_cabecalho" style="margin: 0px 0px 20px 328px;">
-            <button id="btn_home" onclick="VoltarHome()" style="margin: 10px 200px 0px 0px;"><img src="imagens/home.png" id="img_home"></button>
+            <button id="btn_home" onclick="VoltarHome()" style="margin: 0px 200px 0px 0px;"><img src="" id="img_home5"></button>
             <div id="div_titulo7"></div>
         </div>
 
@@ -664,11 +664,22 @@
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
         div_titulo2.innerHTML = `MARIO'S MACHINE`;
+        div_titulo2.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo3.innerHTML = `MARIO'S MACHINE`;
+        div_titulo3.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo4.innerHTML = `MARIO'S MACHINE`;
+        div_titulo4.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo5.innerHTML = `MARIO'S MACHINE`;
+        div_titulo5.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo6.innerHTML = `MARIO'S MACHINE`;
+        div_titulo6.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo7.innerHTML = `MARIO'S MACHINE`;
+        div_titulo7.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
+        img_home1.src = "imagens/home.png";
+        img_home2.src = "imagens/home.png";
+        img_home3.src = "imagens/home.png";
+        img_home4.src = "imagens/home.png";
+        img_home5.src = "imagens/home.png";
     }
 
     function Luigi() {
@@ -685,11 +696,22 @@
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
         div_titulo2.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo2.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo3.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo3.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo4.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo4.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo5.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo5.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo6.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo6.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo7.innerHTML = `LUIGI'S MACHINE`;
+        div_titulo7.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
+        img_home1.src = "imagens/game.png";
+        img_home2.src = "imagens/game.png";
+        img_home3.src = "imagens/game.png";
+        img_home4.src = "imagens/game.png";
+        img_home5.src = "imagens/game.png";
     }
 
     function Yoshi() {
@@ -706,11 +728,22 @@
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
         div_titulo2.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo2.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo3.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo3.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo4.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo4.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo5.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo5.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo6.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo6.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo7.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo7.innerHTML += `<img src="imagens/super-mario.png" style="width: 60px; position: fixed; margin-left: 330px;">`
+        img_home1.src = "imagens/mushroom.png";
+        img_home2.src = "imagens/mushroom.png";
+        img_home3.src = "imagens/mushroom.png";
+        img_home4.src = "imagens/mushroom.png";
+        img_home5.src = "imagens/mushroom.png";
     }
 
     function Donkey() {
@@ -727,11 +760,22 @@
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
         div_titulo2.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo2.innerHTML += `<img src="imagens/Donkey_Kong.png" style="width: 90px; position: fixed; margin-left: 356px;">`
         div_titulo3.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo3.innerHTML += `<img src="imagens/Donkey_Kong.png" style="width: 90px; position: fixed; margin-left: 356px;">`
         div_titulo4.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo4.innerHTML += `<img src="imagens/Donkey_Kong.png" style="width: 90px; position: fixed; margin-left: 356px;">`
         div_titulo5.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo5.innerHTML += `<img src="imagens/Donkey_Kong.png" style="width: 90px; position: fixed; margin-left: 356px;">`
         div_titulo6.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo6.innerHTML += `<img src="imagens/Donkey_Kong.png" style="width: 90px; position: fixed; margin-left: 356px;">`
         div_titulo7.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo7.innerHTML += `<img src="imagens/Donkey_Kong.png" style="width: 90px; position: fixed; margin-left: 356px;">`
+        img_home1.src = "imagens/barril.png";
+        img_home2.src = "imagens/barril.png";
+        img_home3.src = "imagens/barril.png";
+        img_home4.src = "imagens/barril.png";
+        img_home5.src = "imagens/barril.png";
     }
 
     function Sonic() {
@@ -748,11 +792,22 @@
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
         div_titulo2.innerHTML = `SONIC'S MACHINE`;
+        div_titulo2.innerHTML += `<img src="imagens/Sonic_Logo.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo3.innerHTML = `SONIC'S MACHINE`;
+        div_titulo3.innerHTML += `<img src="imagens/Sonic_Logo.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo4.innerHTML = `SONIC'S MACHINE`;
+        div_titulo4.innerHTML += `<img src="imagens/Sonic_Logo.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo5.innerHTML = `SONIC'S MACHINE`;
+        div_titulo5.innerHTML += `<img src="imagens/Sonic_Logo.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo6.innerHTML = `SONIC'S MACHINE`;
+        div_titulo6.innerHTML += `<img src="imagens/Sonic_Logo.png" style="width: 60px; position: fixed; margin-left: 330px;">`
         div_titulo7.innerHTML = `SONIC'S MACHINE`;
+        div_titulo7.innerHTML += `<img src="imagens/Sonic_Logo.png" style="width: 60px; position: fixed; margin-left: 330px;">`
+        img_home1.src = "imagens/anel.png";
+        img_home2.src = "imagens/anel.png";
+        img_home3.src = "imagens/anel.png";
+        img_home4.src = "imagens/anel.png";
+        img_home5.src = "imagens/anel.png";
     }
     
     function mostrarOpcoes() {
