@@ -52,10 +52,31 @@
         border: 2px solid; 
         border-radius: 10px; 
         background-color: white; 
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     #btn_luigi {
+        border: 2px solid; 
+        border-radius: 10px; 
+        background-color: white;
+        margin-right: 5px;
+    }
+
+    #btn_yoshi {
+        border: 2px solid; 
+        border-radius: 10px; 
+        background-color: white;
+        margin-right: 5px;
+    }
+
+    #btn_donkey {
+        border: 2px solid; 
+        border-radius: 10px; 
+        background-color: white;
+        margin-right: 5px;
+    }
+
+    #btn_sonic {
         border: 2px solid; 
         border-radius: 10px; 
         background-color: white;
@@ -249,15 +270,6 @@
         margin: 0px 0px 0px 0px;
     }
 
-    /* .class_tutoriais {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid; 
-        margin: 0px 0px 0px 280px;
-        position: fixed;
-    } */
-
     #lbl_TutorialUm {
         font-size: 20px;
         font-weight: 500;
@@ -435,17 +447,30 @@
     }
 
     .class_nomes {
-        margin: 5px 0px 0px -200px;
+        margin: 5px 0px 0px -180px;
+        height: 85px;
     }
 
     .class_izael {
         display: flex;
         align-items: center;
+        margin-bottom: 10px; 
+        border: 1px solid; 
+        border-radius: 10px;
+        width: 300px;
+        height: 30px;
+        box-shadow: 3px 3px 3px 3px;
     }
 
     .class_ricardo {
         display: flex;
         align-items: center;
+        margin-bottom: 10px; 
+        border: 1px solid; 
+        border-radius: 10px;
+        width: 300px;
+        height: 30px;
+        box-shadow: 3px 3px 3px 3px;
     }
 </style>
 
@@ -458,12 +483,15 @@
         <div class="class_opcoestemas" id="div_opcoestemas">
             <button id="btn_mario" onclick="Mario()"><img src="imagens/mario.png" alt="" style="width: 100px; height: 200px;"></button>
             <button id="btn_luigi" onclick="Luigi()"><img src="imagens/luigi.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_yoshi" onclick="Yoshi()"><img src="imagens/yoshi.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_donkey" onclick="Donkey()"><img src="imagens/Donkey.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_sonic" onclick="Sonic()"><img src="imagens/sonic.png" alt="" style="width: 100px; height: 200px;"></button>
         </div>
         
     </div>
 
     <div class="class_principal" id="div_principal" style="display: none;">
-        <div id="div_titulo2">MARIO'S MACHINE</div>
+        <div id="div_titulo2"></div>
 
         <div class="class_linhaDois" id="div_linhaDois">
             <button onclick="mostrarOpcoes()" id="btn_opcoes">CONVERSÕES</button> <br>
@@ -481,10 +509,6 @@
                 <button onclick="TelaOctal()" id="btn_TelaOctal">OCTAL</button> <br>
             </div>
 
-            <!-- <div class="class_tutoriais" id="div_tutoriais" style="display: none;">
-                <p id="lbl_TutorialUm">TUTORIAL UM:</p>
-                <p id="lbl_TutorialDois">TUTORIAL DOIS:</p> 
-            </div> -->
         </div>
 
     </div>
@@ -492,7 +516,7 @@
     <div class="class_TelaHexadecimal" id="div_TelaHexadecimal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
-            <div id="div_titulo3">MARIO'S MACHINE</div>
+            <div id="div_titulo3"></div>
         </div>
 
         <div style="margin-left: 75px;">
@@ -511,7 +535,7 @@
     <div class="class_TelaDecimal" id="div_TelaDecimal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
-            <div id="div_titulo4">MARIO'S MACHINE</div>
+            <div id="div_titulo4"></div>
         </div>
 
         <div style="margin-left: 75px;">
@@ -530,7 +554,7 @@
     <div class="class_TelaBinario" id="div_TelaBinario" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
-            <div id="div_titulo5">MARIO'S MACHINE</div>
+            <div id="div_titulo5"></div>
         </div>
 
         <div style="margin-left: 75px;">
@@ -549,7 +573,7 @@
     <div class="class_TelaOctal" id="div_TelaOctal" style="display: none;">
         <div class="class_cabecalho">
             <button id="btn_home" onclick="VoltarHome()"><img src="imagens/home.png" id="img_home"></button>
-            <div id="div_titulo6">MARIO'S MACHINE</div>
+            <div id="div_titulo6"></div>
         </div>
 
         <div style="margin-left: 75px;">
@@ -569,7 +593,7 @@
 
         <div class="class_cabecalho" style="margin: 0px 0px 20px 328px;">
             <button id="btn_home" onclick="VoltarHome()" style="margin: 10px 200px 0px 0px;"><img src="imagens/home.png" id="img_home"></button>
-            <div id="div_titulo7">MARIO'S MACHINE</div>
+            <div id="div_titulo7"></div>
         </div>
 
         <div class="class_videos2" id="div_videos2">
@@ -594,7 +618,7 @@
 
     <div class="class_contatos" id="div_contatos">
 
-        <div style="display: flex; align-items: center; justify-content: center;">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
             <p style="font-size: 18px; margin-right: 10px;">Developed with</p>
             <img src="imagens/java-script.png" style="width: 20px;">
             <img src="imagens/html.png" style="width: 20px;">
@@ -605,14 +629,14 @@
         <div class="class_nomes" id="div_nomes">
 
             <div class="class_izael" id="div_izael">
-                <p style="margin-right: 20px;">Izael Junior</p>
+                <p style="margin-right: 20px; margin-left: 10px;">Izael Junior</p>
                 <button style="border: none; margin-right: 10px;"><a href="https://github.com/oizaeljr" target="_blank"><img src="imagens/github.png" alt="" style="width: 20px;"></a></button>
                 <button style="border: none; margin-right: 10px;"><a href="https://www.linkedin.com/in/oizaeljunior/" target="_blank"><img src="imagens/linkedin.png" alt="" style="width: 20px;"></a></button>
                 <button style="border: none;"><a href="mailto:izael.oliveirajr@sptech.school?subject=Assunto%20do%20Email&body=Corpo%20do%20Email" target="_blank"><img src="imagens/email.png" alt="" style="width: 20px;"></a></button>
             </div>
             
             <div class="class_ricardo" id="div_ricardo">
-                <p style="margin-right: 20px;">Ricardo de Oliveira</p>
+                <p style="margin-right: 20px; margin-left: 10px;">Ricardo de Oliveira</p>
                 <button style="border: none; margin-right: 10px;"><a href="https://github.com/ricardoOliveiraN" target="_blank"><img src="imagens/github.png" alt="" style="width: 20px;"></a></button>
                 <button style="border: none; margin-right: 10px;"><a href="" target="_blank"><img src="imagens/linkedin.png" alt="" style="width: 20px;"></a></button>
                 <button style="border: none;"><a href="mailto:ricardo.nicolau@sptech.school?subject=Assunto%20do%20Email&body=Corpo%20do%20Email" target="_blank"><img src="imagens/email.png" alt="" style="width: 20px;"></a></button>
@@ -627,10 +651,16 @@
 
 <script>
     function Mario() {
-        btn_opcoes.style.backgroundColor = "#315BA1";
-        btn_temas.style.backgroundColor = "#CE1C26";
-        btn_operacoes.style.backgroundColor = "#315BA1";
-        btn_tutorial.style.backgroundColor = "#CE1C26";
+        btn_opcoes.style.backgroundColor = "#4A90E2";
+        btn_temas.style.backgroundColor = "#FFFFFF";
+        btn_operacoes.style.backgroundColor = "#4A90E2";
+        btn_tutorial.style.backgroundColor = "#FFFFFF";
+        div_principal.style.backgroundColor = "#FF0000";
+        div_videos.style.backgroundColor = "#FF0000";
+        div_TelaHexadecimal.style.backgroundColor = "#FF0000";
+        div_TelaDecimal.style.backgroundColor = "#FF0000";
+        div_TelaBinario.style.backgroundColor = "#FF0000";
+        div_TelaOctal.style.backgroundColor = "#FF0000";
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
         div_titulo2.innerHTML = `MARIO'S MACHINE`;
@@ -642,10 +672,16 @@
     }
 
     function Luigi() {
-        btn_opcoes.style.backgroundColor = "#34A853";
-        btn_temas.style.backgroundColor = "#1A3D85";
-        btn_operacoes.style.backgroundColor = "#34A853";
-        btn_tutorial.style.backgroundColor = "#1A3D85";
+        btn_opcoes.style.backgroundColor = "#4A90E2";
+        btn_temas.style.backgroundColor = "#FFFFFF";
+        btn_operacoes.style.backgroundColor = "#4A90E2";
+        btn_tutorial.style.backgroundColor = "#FFFFFF";
+        div_principal.style.backgroundColor = "#34B233";
+        div_videos.style.backgroundColor = "#34B233";
+        div_TelaHexadecimal.style.backgroundColor = "#34B233";
+        div_TelaDecimal.style.backgroundColor = "#34B233";
+        div_TelaBinario.style.backgroundColor = "#34B233";
+        div_TelaOctal.style.backgroundColor = "#34B233";
         div_temas.style.display = 'none';
         div_principal.style.display = 'block';
         div_titulo2.innerHTML = `LUIGI'S MACHINE`;
@@ -654,6 +690,69 @@
         div_titulo5.innerHTML = `LUIGI'S MACHINE`;
         div_titulo6.innerHTML = `LUIGI'S MACHINE`;
         div_titulo7.innerHTML = `LUIGI'S MACHINE`;
+    }
+
+    function Yoshi() {
+        btn_opcoes.style.backgroundColor = "#FF9B24";
+        btn_temas.style.backgroundColor = "#FFFFFF";
+        btn_operacoes.style.backgroundColor = "#FF9B24";
+        btn_tutorial.style.backgroundColor = "#FFFFFF";
+        div_principal.style.backgroundColor = "#96D37E";
+        div_videos.style.backgroundColor = "#96D37E";
+        div_TelaHexadecimal.style.backgroundColor = "#96D37E";
+        div_TelaDecimal.style.backgroundColor = "#96D37E";
+        div_TelaBinario.style.backgroundColor = "#96D37E";
+        div_TelaOctal.style.backgroundColor = "#96D37E";
+        div_temas.style.display = 'none';
+        div_principal.style.display = 'block';
+        div_titulo2.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo3.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo4.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo5.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo6.innerHTML = `YOSHI'S MACHINE`;
+        div_titulo7.innerHTML = `YOSHI'S MACHINE`;
+    }
+
+    function Donkey() {
+        btn_opcoes.style.backgroundColor = "#A56C40";
+        btn_temas.style.backgroundColor = "#F2D1B3";
+        btn_operacoes.style.backgroundColor = "#A56C40";
+        btn_tutorial.style.backgroundColor = "#F2D1B3";
+        div_principal.style.backgroundColor = "#7C4F28";
+        div_videos.style.backgroundColor = "#7C4F28";
+        div_TelaHexadecimal.style.backgroundColor = "#7C4F28";
+        div_TelaDecimal.style.backgroundColor = "#7C4F28";
+        div_TelaBinario.style.backgroundColor = "#7C4F28";
+        div_TelaOctal.style.backgroundColor = "#7C4F28";
+        div_temas.style.display = 'none';
+        div_principal.style.display = 'block';
+        div_titulo2.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo3.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo4.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo5.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo6.innerHTML = `DONKEY'S MACHINE`;
+        div_titulo7.innerHTML = `DONKEY'S MACHINE`;
+    }
+
+    function Sonic() {
+        btn_opcoes.style.backgroundColor = "#C8102E";
+        btn_temas.style.backgroundColor = "#FFFFFF";
+        btn_operacoes.style.backgroundColor = "#C8102E";
+        btn_tutorial.style.backgroundColor = "#FFFFFF";
+        div_principal.style.backgroundColor = "#0F7EF2";
+        div_videos.style.backgroundColor = "#0F7EF2";
+        div_TelaHexadecimal.style.backgroundColor = "#0F7EF2";
+        div_TelaDecimal.style.backgroundColor = "#0F7EF2";
+        div_TelaBinario.style.backgroundColor = "#0F7EF2";
+        div_TelaOctal.style.backgroundColor = "#0F7EF2";
+        div_temas.style.display = 'none';
+        div_principal.style.display = 'block';
+        div_titulo2.innerHTML = `SONIC'S MACHINE`;
+        div_titulo3.innerHTML = `SONIC'S MACHINE`;
+        div_titulo4.innerHTML = `SONIC'S MACHINE`;
+        div_titulo5.innerHTML = `SONIC'S MACHINE`;
+        div_titulo6.innerHTML = `SONIC'S MACHINE`;
+        div_titulo7.innerHTML = `SONIC'S MACHINE`;
     }
     
     function mostrarOpcoes() {
@@ -667,7 +766,6 @@
     }
 
     function mostrarTutorial() {
-        // div_tutoriais.style.display = 'block';
         div_videoUm.style.display = 'block';
         div_principal.style.display = 'none';
         div_videos.style.display = 'block';
@@ -705,7 +803,6 @@
         div_mensagem.innerHTML = ''
         div_principal.style.display = 'block';
         div_opcoes.style.display = 'none';
-        // div_tutoriais.style.display = 'none';
         div_TelaHexadecimal.style.display = 'none';
         div_TelaDecimal.style.display = 'none';
         div_TelaBinario.style.display = 'none';
