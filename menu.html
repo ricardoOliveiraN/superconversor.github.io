@@ -815,21 +815,36 @@
         var decimal = Number(ipt_Decimal.value);
         let Octal = decimal.toString(8);
 
-        div_mensagem.innerHTML = (`${Octal}`)
+        if (isNaN(Octal)) {
+            ipt_Decimal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${Octal}`)
+        }
     }
         // TRANSFORMANDO O NÚMERO DECIMAL EM HEXADECIMAL
     function DecimalHexadecimal() {
         var decimal = Number(ipt_Decimal.value);
         let hexadecimal = decimal.toString(16);
 
-        div_mensagem.innerHTML = (`${hexadecimal}`)
+        if (isNaN(decimal)) {
+            ipt_Decimal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${hexadecimal}`)
+        }
     }
         // TRANSFORMANDO O NÚMERO DECIMAL EM BINÁRIO
     function DecimalBinario() {
         var decimal = Number(ipt_Decimal.value);
         let binario = decimal.toString(2);
 
-        div_mensagem.innerHTML = (`${binario}`)
+        if (isNaN(binario)) {
+            ipt_Decimal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${binario}`)
+        }
     }
         
         // TRANSFORMANDO O NÚMERO OCTAL EM DECIMAL
@@ -837,7 +852,12 @@
         var octal = Number(ipt_Octal.value);
         let decimal = parseInt(octal, 8) 
 
-        div_mensagem.innerHTML = (`${decimal}`)
+        if (isNaN(decimal)) {
+            ipt_Octal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${decimal}`)
+        }
     }
         // TRANSFORMANDO O NÚMERO OCTAL EM HEXADECIMAL
     function OctalHexadecimal() {
@@ -845,7 +865,12 @@
         let decimal = parseInt(octal, 8) // Transformando o número octal em decimal
         let hexadecimal = decimal.toString(16) // Transformando o número decimal em hexadecimal
 
-        div_mensagem.innerHTML = (`${hexadecimal}`)
+        if (isNaN(hexadecimal)) {
+            ipt_Octal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${hexadecimal}`)
+        }
     }
         // TRANSFORMANDO O NÚMERO OCTAL EM BINÁRIO
     function OctalBinario() {
@@ -853,7 +878,12 @@
         let decimal = parseInt(octal, 8) // Transformando o número octal em decimal
         let binario = decimal.toString(2) // Transformando o número decimal em binário
 
-        div_mensagem.innerHTML = (`${binario}`)
+        if (isNaN(binario)) {
+            ipt_Octal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${binario}`)
+        }
     }
 
         // TRANSFORMANDO O NÚMERO BINÁRIO EM OCTAL
@@ -862,7 +892,12 @@
         let decimal = parseInt(binario, 2) // Transformando o número binário em decimal
         let octal = decimal.toString(8) // Transformando o número decimal em octal
 
-        div_mensagem.innerHTML = (`${octal}`)
+        if (isNaN(octal)) {
+            ipt_Binario.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${octal}`)
+        }
     }
         // TRANSFORMANDO O NÚMERO BINÁRIO EM HEXADECIMAL
     function BinarioHexadecimal() {
@@ -870,22 +905,37 @@
         let decimal = parseInt(binario, 2) // Transformando o número binário em decimal
         let hexadecimal = decimal.toString(16) // Transformando o número decimal em hexadecimal
 
-        div_mensagem.innerHTML = (`${hexadecimal}`)
+        if (isNaN(decimal)) {
+            ipt_Binario.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${hexadecimal}`)
+        }
     }
         // TRANSFORMANDO O NÚMERO BINÁRIO EM DECIMAL
     function BinarioDecimal() {
         var binario = Number(ipt_Binario.value);
         let decimal = parseInt(binario, 2)
 
-        div_mensagem.innerHTML = (`${decimal}`)
+        if (isNaN(decimal)) {
+            ipt_Binario.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${decimal}`)
+        }
     }
 
         // TRANSFORMANDO O NÚMERO HEXADECIMAL EM DECIMAL
     function HexadecimalDecimal() {
         var hexadecimal = ipt_Hexadecimal.value
         let decimal = parseInt(hexadecimal, 16)
-        
-        div_mensagem.innerHTML = (`${decimal}`)
+
+        if (isNaN(decimal)) {
+            ipt_Hexadecimal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${decimal}`)
+        }
     }
         // TRANSFORMANDO O NÚMERO HEXADECIMAL EM OCTAL
     function HexadecimalOctal() {
@@ -893,7 +943,12 @@
         let decimal = parseInt(hexadecimal, 16) // Transformando o número hexadecimal em decimal
         let octal = decimal.toString(8) // Transformando o número decimal em octal
 
-        div_mensagem.innerHTML = (`${octal}`)
+        if (isNaN(octal)) {
+            ipt_Hexadecimal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${octal}`)
+        }
     }
         // TRANSFORMANDO O NÚMERO HEXADECIMAL EM BINARIO
     function HexadecimalBinario() {
@@ -901,7 +956,12 @@
         let decimal = parseInt(hexadecimal, 16) // Transformando o número hexadecimal em decimal
         let binario = decimal.toString(2) // Transformando o número decimal em binário
 
-        div_mensagem.innerHTML = (`${binario}`)
+        if (isNaN(binario)) {
+            ipt_Hexadecimal.value = 'Número inválido!';
+            div_mensagem.innerHTML = '';
+        } else {
+            div_mensagem.innerHTML = (`${binario}`)
+        }
     }
 
 </script>
