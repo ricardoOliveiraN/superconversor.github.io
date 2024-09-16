@@ -1065,9 +1065,15 @@ var SouOctal = 0;
 
             if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm + decimalDois;
@@ -1077,7 +1083,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1092,11 +1098,17 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 10);
 
             
-            if (isNaN(decimalUm)){
+            
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm + decimalDois;
@@ -1106,7 +1118,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1120,13 +1132,22 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 2);
 
             
-            if (isNaN(decimalUm)){
+            
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
             }else{
-
+                
                 Calcular = decimalUm + decimalDois;
 
                 let resultadoHexadecimal = Calcular.toString(16);
@@ -1134,7 +1155,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1148,11 +1169,17 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 8);
 
             
-            if (isNaN(decimalUm)){
+            
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm + decimalDois;
@@ -1162,7 +1189,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1189,11 +1216,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 16);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm * decimalDois;
@@ -1203,7 +1237,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1218,11 +1252,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 10);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm * decimalDois;
@@ -1232,7 +1273,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1246,11 +1287,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 2);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm * decimalDois;
@@ -1260,7 +1308,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1274,11 +1322,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 8);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm * decimalDois;
@@ -1288,7 +1343,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1314,11 +1369,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 16);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm - decimalDois;
@@ -1328,7 +1390,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1343,11 +1405,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 10);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm - decimalDois;
@@ -1357,7 +1426,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1371,11 +1440,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 2);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm - decimalDois;
@@ -1385,7 +1461,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1399,11 +1475,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 8);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm - decimalDois;
@@ -1413,7 +1496,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1442,11 +1525,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 16);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm / decimalDois;
@@ -1456,7 +1546,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1471,11 +1561,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 10);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm / decimalDois;
@@ -1485,7 +1582,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1499,11 +1596,18 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 2);
 
             
-            if (isNaN(decimalUm)){
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm / decimalDois;
@@ -1513,7 +1617,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
@@ -1527,11 +1631,19 @@ var SouOctal = 0;
             let decimalDois = parseInt (SegundoValor, 8);
 
             
-            if (isNaN(decimalUm)){
+            
+            if (isNaN(decimalUm) && isNaN(decimalDois)){
                 inp_primeiroValor.value = 'valor inserido está incorreto.'
-            }
-            if (isNaN(decimalDois)){
                 inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if(isNaN(decimalUm)){ 
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+                
+            }else if (isNaN(decimalDois)){
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
             }else{
 
                 Calcular = decimalUm / decimalDois;
@@ -1541,7 +1653,7 @@ var SouOctal = 0;
                 let resultadoOctal = Calcular.toString(8);
                 let resultadoDecimal = Calcular;
 
-                div_resultadoCalculo.innerHTML = `Somando ${PrimeiroValor} com ${SegundoValor}, teremos: <br>
+                div_resultadoCalculo.innerHTML = `
                     Hexadecimal: ${resultadoHexadecimal}.<br>
                     Binario: ${resultadoBinario}.<br>
                     Decimal: ${resultadoDecimal}.<br>
