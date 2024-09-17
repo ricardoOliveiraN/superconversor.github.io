@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="class_temas" id="div_temas">
+        <div id="div_titulo1">MARISE'S MACHINE</div>
+        <p style="margin: 19px 0px 20px 310px; font-weight: 600; font-size: 20px;">ESCOLHA O TEMA:</p>
+
+        <div class="class_opcoestemas" id="div_opcoestemas">
+            <button id="btn_mario" onclick="Mario()"><img src="imagens/mario.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_luigi" onclick="Luigi()"><img src="imagens/luigi.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_yoshi" onclick="Yoshi()"><img src="imagens/yoshi.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_donkey" onclick="Donkey()"><img src="imagens/Donkey.png" alt="" style="width: 100px; height: 200px;"></button>
+            <button id="btn_sonic" onclick="Sonic()"><img src="imagens/sonic.png" alt="" style="width: 100px; height: 200px;"></button>
+        </div>
+        
+    </div>
+
+    <div class="class_principal" id="div_principal" style="display: none;">
+        <div id="div_titulo2"></div>
+
+        <div class="class_linhaDois" id="div_linhaDois">
+            <button onclick="mostrarOpcoes()" id="btn_opcoes">CONVERSÕES</button> <br>
+            <button onclick="TelaTema()" id="btn_temas">ESCOLHER TEMA</button>
+            <button onclick="mostrarOperacoes()" id="btn_operacoes">OPERACÕES</button> <br>
+            <button onclick="mostrarTutorial()" id="btn_tutorial">TUTORIAIS</button> <br>
+        </div>
+
+        <div class="class_linhaTres" id="div_linhaTres">   
+            <div class="class_opcoes" id="div_opcoes" style="display: none;">
+                <p id="lbl_base">Sua base inicial é:</p>
+                <button onclick="TelaHexadecimal()" id="btn_TelaHexadecimal">HEXADECIMAL</button> <br>
+                <button onclick="TelaDecimal()" id="btn_TelaDecimal">DECIMAL</button> <br>
+                <button onclick="TelaBinario()" id="btn_TelaBinario">BINÁRIO</button> <br>
+                <button onclick="TelaOctal()" id="btn_TelaOctal">OCTAL</button> <br>
+            </div>
+
+            <div class="class_operacoes" id="div_operacoes" style="display: none;">
+                <p id="lbl_base2">Sua base inicial é:</p>
+                <button onclick="calcularHexadecimal()" id="btn_calcularHexadecimal">Hexadecimal</button><br>
+                <button onclick="calcularDecimal()" id="btn_calcularDecimal">Decimal</button><br>
+                <button onclick="calcularBinario()" id="btn_calcularBinario">Binário</button><br>
+                <button onclick="calcularOctal()" id="btn_calcularOctal">Octal</button><br>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="class_TelaHexadecimal" id="div_TelaHexadecimal" style="display: none;">
+        <div class="class_cabecalho">
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home1"></button>
+            <div id="div_titulo3"></div>
+        </div>
+
+        <div style="margin-left: 75px;">
+            <p style="font-size: 20px; font-weight: 500;">Digite o valor hexadecimal:</p>
+            <input type="text" placeholder="Digite o valor em hexadecimal" id="ipt_Hexadecimal">
+        </div>
+        
+        <div class="class_escolha" style="margin-left: 72px;">
+            <button onclick="HexadecimalDecimal()">Decimal</button>
+            <button onclick="HexadecimalOctal()">Octal</button>
+            <button onclick="HexadecimalBinario()">Binário</button>
+        </div>
+
+    </div>
+
+    <div class="class_TelaDecimal" id="div_TelaDecimal" style="display: none;">
+        <div class="class_cabecalho">
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home2"></button>
+            <div id="div_titulo4"></div>
+        </div>
+
+        <div style="margin-left: 75px;">
+            <p style="font-size: 20px; font-weight: 500;">Digite o valor decimal:</p>
+            <input type="text" placeholder="Utilize os dígitos de 0 a 9" id="ipt_Decimal">
+        </div>
+    
+        <div class="class_escolha" style="margin-left: 72px;">
+            <button onclick="DecimalOctal()">Octal</button>
+            <button onclick="DecimalHexadecimal()" style="width: 120px;">Hexadecimal</button>
+            <button onclick="DecimalBinario()">Binário</button>
+        </div>
+
+    </div>
+    
+    <div class="class_TelaBinario" id="div_TelaBinario" style="display: none;">
+        <div class="class_cabecalho">
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home3"></button>
+            <div id="div_titulo5"></div>
+        </div>
+
+        <div style="margin-left: 75px;">
+            <p style="font-size: 20px; font-weight: 500;">Digite o valor binário:</p>
+            <input type="text" placeholder="Utilize apenas os dígitos 0 e 1" id="ipt_Binario">
+        </div>
+        
+        <div class="class_escolha" style="margin-left: 72px;">
+            <button onclick="BinarioOctal()">Octal</button>
+            <button onclick="BinarioHexadecimal()" style="width: 120px;">Hexadecimal</button>
+            <button onclick="BinarioDecimal()">Decimal</button>
+        </div>
+
+    </div>
+
+    <div class="class_TelaOctal" id="div_TelaOctal" style="display: none;">
+        <div class="class_cabecalho">
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home4"></button>
+            <div id="div_titulo6"></div>
+        </div>
+
+        <div style="margin-left: 75px;">
+            <p style="font-size: 20px; font-weight: 500;">Digite o valor octal:</p>
+            <input type="text" placeholder="Utilize os dígitos de 0 a 7" id="ipt_Octal">
+        </div>
+    
+        <div class="class_escolha" style="margin-left: 72px;">
+            <button onclick="OctalDecimal()">Decimal</button>
+            <button onclick="OctalHexadecimal()" style="width: 120px;">Hexadecimal</button>
+            <button onclick="OctalBinario()">Binário</button>
+        </div>
+
+    </div>
+
+    <div class="class_videos" id="div_videos" style="display: none;">
+
+        <div class="class_cabecalho" style="margin: 0px 0px 20px 328px;">
+            <button id="btn_home" onclick="VoltarHome()" style="margin: 0px 90px 0px 0px;"><img src="" id="img_home5"></button>
+            <div id="div_titulo7"></div>
+        </div>
+
+        <div class="class_videos2" id="div_videos2">
+
+            <div class="class_videoUm" id="div_videoUm"><p style="font-size: 20px; font-weight: 500;">HEXADECIMAL x DECIMAL x BINÁRIO</p>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/Vctnbk0RWVY?si=nHV-DCb8qH1STguE" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        
+            <div class="class_videoDois" id="div_videoDois"><p style="font-size: 20px; font-weight: 500;">BINÁRIO X OCTAL</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qf5NJmnWqtw?si=mYHIvCOSWVuQY3zd" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="div_resultado" style="font-weight: 600;"></div>
+
+    <div class="class_OperacoesTela" id="div_OperacoesTela" style="display: none;">
+        <div class="class_cabecalho">
+            <button id="btn_home" onclick="VoltarHome()"><img src="" id="img_home6"></button>
+            <div id="div_titulo8"></div>
+        </div>
+
+        <div style="margin-left: 50px;">
+            <p style="font-size: 20px; font-weight: 500;">Digite o primeiro número::</p>
+            <input type="text" placeholder="" id="inp_primeiroValor"><br><br>
+
+            <p style="font-size: 20px; font-weight: 500;">Digite o segundo número::</p>
+            <input type="text" placeholder="" id="inp_segundoValor"><br>
+        </div>
+        
+        <div class="class_escolha" style="margin-left: 47px;">
+            <button id="btn_hexadecimal" onclick="Multiplicar()">X</button>   
+            <button id="btn_decimal" onclick="Subtrair()">-</button> 
+            <button id="btn_binario" onclick="Dividir()">/</button> 
+            <button id="btn_octal" onclick="Somar()">+</button> 
+            <!-- <button onclick="voltarHome()">Voltar</button>  -->
+        </div>
+        <div id="div_resultadoCalculo" style="font-weight: 600;"></div>
+    </div>
+
+    <div class="class_contatos" id="div_contatos">
+
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+            <p style="font-size: 18px; margin-right: 10px;">Developed with</p>
+            <img src="imagens/java-script.png" style="width: 20px;">
+            <img src="imagens/html.png" style="width: 20px;">
+            <img src="imagens/css-3.png" style="width: 20px; margin-right: 10px;">
+            <p style="font-size: 18px;">by</p> 
+        </div>
+
+        <div class="class_nomes" id="div_nomes">
+
+            <div class="class_izael" id="div_izael">
+                <p style="margin-right: 20px; margin-left: 10px;">Izael Junior</p>
+                <button style="border: none; margin-right: 10px;"><a href="https://github.com/oizaeljr" target="_blank"><img src="imagens/github.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none; margin-right: 10px;"><a href="https://www.linkedin.com/in/oizaeljunior/" target="_blank"><img src="imagens/linkedin.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none;"><a href="mailto:izael.oliveirajr@sptech.school?subject=Assunto%20do%20Email&body=Corpo%20do%20Email" target="_blank"><img src="imagens/email.png" alt="" style="width: 20px;"></a></button>
+            </div>
+            
+            <div class="class_ricardo" id="div_ricardo">
+                <p style="margin-right: 20px; margin-left: 10px;">Ricardo de Oliveira</p>
+                <button style="border: none; margin-right: 10px;"><a href="https://github.com/ricardoOliveiraN" target="_blank"><img src="imagens/github.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none; margin-right: 10px;"><a href="https://www.linkedin.com/in/ricardo-oliveira-084147312/" target="_blank"><img src="imagens/linkedin.png" alt="" style="width: 20px;"></a></button>
+                <button style="border: none;"><a href="mailto:ricardo.nicolau@sptech.school?subject=Assunto%20do%20Email&body=Corpo%20do%20Email" target="_blank"><img src="imagens/email.png" alt="" style="width: 20px;"></a></button>
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>
+
+<script src="funcionalidades.js"></script>

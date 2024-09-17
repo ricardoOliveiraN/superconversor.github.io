@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.class_temas {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+    margin: 10px 0px 0px 30px;
+    box-shadow: 3px 3px 3px 3px;
+    background-color: #8a8a8a;
+    /* color: white; */
+}
+
+.class_opcoestemas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+#btn_mario {
+    border: 2px solid; 
+    border-radius: 10px; 
+    background-color: white; 
+    margin-right: 5px;
+}
+
+#btn_luigi {
+    border: 2px solid; 
+    border-radius: 10px; 
+    background-color: white;
+    margin-right: 5px;
+}
+
+#btn_yoshi {
+    border: 2px solid; 
+    border-radius: 10px; 
+    background-color: white;
+    margin-right: 5px;
+}
+
+#btn_donkey {
+    border: 2px solid; 
+    border-radius: 10px; 
+    background-color: white;
+    margin-right: 5px;
+}
+
+#btn_sonic {
+    border: 2px solid; 
+    border-radius: 10px; 
+    background-color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.class_principal {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+    margin: 10px 0px 0px 30px;
+    box-shadow: 3px 3px 3px 3px;
+    background-color: #F3C11F;
+} 
+
+#div_titulo1, #div_titulo2, #div_titulo3, #div_titulo4, #div_titulo5, #div_titulo6, #div_titulo7, #div_titulo8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 650;
+    font-size: 25px;
+    margin: 10px 0px 10px 0px;
+    /* border: 1px solid; */
+}
+
+.class_linhaDois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    margin: 0px 0px 0px 0px;
+}
+
+#btn_opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: #315BA1;
+    margin: 0px 30px 0px 0px;
+}
+
+#btn_temas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: #CE1C26;
+    margin: 0px 30px 0px 0px;
+}
+
+#btn_operacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: #315BA1;
+    margin: 0px 0px 0px 0px;
+}
+
+#btn_tutorial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: #CE1C26;
+    margin: 0px 0px 0px 30px;
+}
+
+.class_linhaTres {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    /* border: 1px solid; */
+    width: 750px;
+    height: 300px;
+    margin: 0px 0px 0px 10px;
+}
+
+.class_opcoes {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 300px 0px -150px;
+    /* border: 2px solid; */
+    position: fixed;
+}
+
+#lbl_base {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 0px 10px 0px;
+}
+
+#btn_TelaHexadecimal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+#btn_TelaDecimal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+#btn_TelaBinario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+#btn_TelaOctal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+.class_operacoes {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 300px 0px 700px;
+    /* border: 2px solid; */
+    position: fixed;
+    width: 350px;
+}
+
+#lbl_base2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 0px 10px 0px;
+}
+
+#btn_calcularHexadecimal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+#btn_calcularDecimal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+#btn_calcularBinario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+#btn_calcularOctal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+#lbl_TutorialUm {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0px 0px 0px;
+}
+
+#lbl_TutorialDois {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.class_cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0px 0px 20px 50px;
+}
+
+#btn_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    margin: 0px 20px 0px 0px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px;
+    background-color: white;
+}
+
+#img_home1, #img_home2, #img_home3, #img_home4, #img_home5, #img_home6 {
+    width: 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+#ipt_Hexadecimal, #ipt_Decimal, #ipt_Binario, #ipt_Octal, #inp_primeiroValor, #inp_segundoValor {
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    box-shadow: 3px 3px 1px 0px;
+}  
+
+.class_TelaHexadecimal {
+    margin: 10px 0px 0px 30px;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    box-shadow: 3px 3px 3px 3px;
+    background-color: #F3C11F;
+}
+
+.class_TelaHexadecimal button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px;
+    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    background-color: white;
+    margin: 10px 0px 0px 3px;
+}
+
+.class_TelaDecimal {
+    margin: 10px 0px 0px 30px;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    box-shadow: 3px 3px 3px 3px;
+    background-color: #F3C11F;
+}
+
+.class_TelaDecimal button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px;
+    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    background-color: white;
+    margin: 10px 0px 0px 3px;
+}
+
+.class_TelaBinario {
+    margin: 10px 0px 0px 30px;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    box-shadow: 3px 3px 3px 3px;
+    background-color: #F3C11F;
+}
+
+.class_TelaBinario button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px;
+    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    background-color: white;
+    margin: 10px 0px 0px 3px;
+}
+
+.class_TelaOctal {
+    margin: 10px 0px 0px 30px;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    box-shadow: 3px 3px 3px 3px;
+    background-color: #F3C11F;
+}
+
+.class_TelaOctal button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px;
+    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    background-color: white;
+    margin: 10px 0px 0px 3px;
+}
+
+.class_OperacoesTela {
+    margin: 50px 0px -33px 30px;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 490px;
+    height: 448px;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.class_OperacoesTela button {
+    width: 73px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px;
+    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    background-color: white;
+    margin: 10px 0px 0px 3px;
+}
+
+#div_resultado {
+    margin: -35px 0px 0px 110px;
+}
+
+#div_resultadoCalculo {
+    margin: 20px 0px 0px 50px;
+}     
+
+.class_videos {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 1259px;
+    height: 445px;
+    margin: 10px 0px 0px 30px;
+    box-shadow: 3px 3px 3px 3px;
+    background-color: #F3C11F;
+}
+
+.class_videos2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 19px 0px 0px 0px;
+}
+
+.class_videoUm {
+    margin: 0px 125px 0px 0px;
+}
+
+.class_videoDois {
+    margin: 0px 0px 0px 0px;
+}
+
+.class_contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 58px 0px 0px 30px;
+    border: 1px solid;
+    box-shadow: 3px 3px 3px 3px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.class_nomes {
+    margin: 5px 0px 0px -180px;
+    height: 85px;
+}
+
+.class_izael {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    border: 1px solid; 
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.class_ricardo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    border: 1px solid; 
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    box-shadow: 3px 3px 3px 3px;
+}
