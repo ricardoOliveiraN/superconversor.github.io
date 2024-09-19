@@ -210,11 +210,6 @@ var SouBinario = 0;
 var SouOctal = 0;
 
 function calcularHexadecimal(){
-    // div_operacoes.style.display = 'none';
-    // div_exibirTutorial.style.display = 'none';
-    // div_opcoesIniciais.style.display = 'none';
-    // div_converterPara.style.display = 'none';
-    // div_baseDesejadaCalculo.style.display = 'none';
     div_OperacoesTela.style.display = 'block';
     SouHexadecimal += 1;
     div_principal.style.display = 'none'
@@ -222,11 +217,6 @@ function calcularHexadecimal(){
     inp_segundoValor.placeholder = 'Digite o valor hexadecimal';
 }
 function calcularDecimal(){
-    // div_operacoes.style.display = 'none';
-    // div_exibirTutorial.style.display = 'none';
-    // div_opcoesIniciais.style.display = 'none';
-    // div_converterPara.style.display = 'none';
-    // div_baseDesejadaCalculo.style.display = 'none';
     div_OperacoesTela.style.display = 'block';
     SouDecimal += 1;
     div_principal.style.display = 'none'
@@ -234,11 +224,6 @@ function calcularDecimal(){
     inp_segundoValor.placeholder = 'Digite o valor decimal';
 }
 function calcularBinario(){
-    // div_operacoes.style.display = 'none';
-    // div_exibirTutorial.style.display = 'none';
-    // div_opcoesIniciais.style.display = 'none';
-    // div_converterPara.style.display = 'none';
-    // div_baseDesejadaCalculo.style.display = 'none';
     div_OperacoesTela.style.display = 'block';
     SouBinario += 1;
     div_principal.style.display = 'none'
@@ -246,11 +231,6 @@ function calcularBinario(){
     inp_segundoValor.placeholder = 'Digite o valor binário';
 }
 function calcularOctal(){
-    // div_operacoes.style.display = 'none';
-    // div_exibirTutorial.style.display = 'none';
-    // div_opcoesIniciais.style.display = 'none';
-    // div_converterPara.style.display = 'none';
-    // div_baseDesejadaCalculo.style.display = 'none';
     div_OperacoesTela.style.display = 'block';
     SouOctal += 1;
     div_principal.style.display = 'none'
@@ -902,6 +882,10 @@ function TelaOctal() {
 }
 
 function VoltarHome() {
+    SouHexadecimal = 0;
+    SouDecimal = 0;
+    SouBinario = 0;
+    SouOctal = 0;
     div_resultado.innerHTML = ''
     div_resultadoCalculo.innerHTML = ''
     inp_primeiroValor.value = ''
