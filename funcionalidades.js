@@ -179,9 +179,9 @@ function Sonic() {
 }
 
 function mostrarOpcoes() {
-    div_opcoes.style.display = 'block';    
+    div_opcoes.style.display = 'block';
     div_operacoes.style.display = 'none';
-    
+
 }
 
 function TelaTema() {
@@ -199,7 +199,7 @@ function mostrarTutorial() {
     div_OperacoesTela.style.display = 'none';
 }
 
-function mostrarOperacoes(){
+function mostrarOperacoes() {
     div_operacoes.style.display = 'block';
     div_opcoes.style.display = 'none';
 }
@@ -209,28 +209,28 @@ var SouDecimal = 0;
 var SouBinario = 0;
 var SouOctal = 0;
 
-function calcularHexadecimal(){
+function calcularHexadecimal() {
     div_OperacoesTela.style.display = 'block';
     SouHexadecimal += 1;
     div_principal.style.display = 'none'
     inp_primeiroValor.placeholder = 'Digite o valor hexadecimal';
     inp_segundoValor.placeholder = 'Digite o valor hexadecimal';
 }
-function calcularDecimal(){
+function calcularDecimal() {
     div_OperacoesTela.style.display = 'block';
     SouDecimal += 1;
     div_principal.style.display = 'none'
     inp_primeiroValor.placeholder = 'Digite o valor decimal';
     inp_segundoValor.placeholder = 'Digite o valor decimal';
 }
-function calcularBinario(){
+function calcularBinario() {
     div_OperacoesTela.style.display = 'block';
     SouBinario += 1;
     div_principal.style.display = 'none'
     inp_primeiroValor.placeholder = 'Digite o valor binário';
     inp_segundoValor.placeholder = 'Digite o valor binário';
 }
-function calcularOctal(){
+function calcularOctal() {
     div_OperacoesTela.style.display = 'block';
     SouOctal += 1;
     div_principal.style.display = 'none'
@@ -238,31 +238,31 @@ function calcularOctal(){
     inp_segundoValor.placeholder = 'Digite o valor octal';
 }
 
-function Somar(){
+function Somar() {
 
     var PrimeiroValor = inp_primeiroValor.value;
     var SegundoValor = inp_segundoValor.value;
     var Calcular = 0;
 
 
-    if (SouHexadecimal == 1){
+    if (SouHexadecimal == 1) {
 
 
-        let decimalUm = parseInt (PrimeiroValor, 16);
-        let decimalDois = parseInt (SegundoValor, 16);
+        let decimalUm = parseInt(PrimeiroValor, 16);
+        let decimalDois = parseInt(SegundoValor, 16);
 
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else if (isNaN(decimalDois)){
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm + decimalDois;
 
@@ -272,32 +272,32 @@ function Somar(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
         }
 
-    }else if (SouDecimal == 1){
+    } else if (SouDecimal == 1) {
 
 
-        let decimalUm = parseInt (PrimeiroValor, 10);
-        let decimalDois = parseInt (SegundoValor, 10);
+        let decimalUm = parseInt(PrimeiroValor, 10);
+        let decimalDois = parseInt(SegundoValor, 10);
 
-        
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else if(isNaN(decimalUm)){ 
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else if (isNaN(decimalDois)){
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm + decimalDois;
 
@@ -307,68 +307,34 @@ function Somar(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
-        }   
-    }else if (SouBinario == 1){
-    
+        }
+    } else if (SouBinario == 1) {
 
-        let decimalUm = parseInt (PrimeiroValor, 2);
-        let decimalDois = parseInt (SegundoValor, 2);
 
-        
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+        let decimalUm = parseInt(PrimeiroValor, 2);
+        let decimalDois = parseInt(SegundoValor, 2);
+
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else{
-            
-            Calcular = decimalUm + decimalDois;
 
-            let resultadoHexadecimal = Calcular.toString(16);
-            let resultadoBinario = Calcular.toString(2);
-            let resultadoOctal = Calcular.toString(8);
-            let resultadoDecimal = Calcular;
-
-            div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
-                Binario: ${resultadoBinario}.<br>
-                Decimal: ${resultadoDecimal}.<br>
-                Octal: ${resultadoOctal}.`
-
-        }   
-    }else if (SouOctal == 1){
-    
-
-        let decimalUm = parseInt (PrimeiroValor, 8);
-        let decimalDois = parseInt (SegundoValor, 8);
-
-        
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-        }else if(isNaN(decimalUm)){ 
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-        }else if (isNaN(decimalDois)){
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm + decimalDois;
 
@@ -378,45 +344,79 @@ function Somar(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
-        }   
+        }
+    } else if (SouOctal == 1) {
+
+
+        let decimalUm = parseInt(PrimeiroValor, 8);
+        let decimalDois = parseInt(SegundoValor, 8);
+
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
+            inp_primeiroValor.value = 'valor inserido está incorreto.'
+            inp_segundoValor.value = 'valor inserido está incorreto.'
+            div_resultadoCalculo.innerHTML = ''
+        } else if (isNaN(decimalUm)) {
+            inp_primeiroValor.value = 'valor inserido está incorreto.'
+            div_resultadoCalculo.innerHTML = ''
+        } else if (isNaN(decimalDois)) {
+            inp_segundoValor.value = 'valor inserido está incorreto.'
+            div_resultadoCalculo.innerHTML = ''
+        } else {
+
+            Calcular = decimalUm + decimalDois;
+
+            let resultadoHexadecimal = Calcular.toString(16);
+            let resultadoBinario = Calcular.toString(2);
+            let resultadoOctal = Calcular.toString(8);
+            let resultadoDecimal = Calcular;
+
+            div_resultadoCalculo.innerHTML = `
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
+                Binario: ${resultadoBinario}.<br>
+                Decimal: ${resultadoDecimal}.<br>
+                Octal: ${resultadoOctal}.`
+
+        }
     }
 
 
 }
 
 
-function Multiplicar(){
+function Multiplicar() {
 
     var PrimeiroValor = inp_primeiroValor.value;
     var SegundoValor = inp_segundoValor.value;
     var Calcular = 0;
-    
 
-    if (SouHexadecimal == 1){
-    
 
-        let decimalUm = parseInt (PrimeiroValor, 16);
-        let decimalDois = parseInt (SegundoValor, 16);
+    if (SouHexadecimal == 1) {
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+
+        let decimalUm = parseInt(PrimeiroValor, 16);
+        let decimalDois = parseInt(SegundoValor, 16);
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm * decimalDois;
 
@@ -426,33 +426,33 @@ function Multiplicar(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
         }
 
-    }else if (SouDecimal == 1){
-    
+    } else if (SouDecimal == 1) {
 
-        let decimalUm = parseInt (PrimeiroValor, 10);
-        let decimalDois = parseInt (SegundoValor, 10);
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+        let decimalUm = parseInt(PrimeiroValor, 10);
+        let decimalDois = parseInt(SegundoValor, 10);
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm * decimalDois;
 
@@ -462,32 +462,32 @@ function Multiplicar(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
-        }   
-    }else if (SouBinario == 1){
-    
+        }
+    } else if (SouBinario == 1) {
 
-        let decimalUm = parseInt (PrimeiroValor, 2);
-        let decimalDois = parseInt (SegundoValor, 2);
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+        let decimalUm = parseInt(PrimeiroValor, 2);
+        let decimalDois = parseInt(SegundoValor, 2);
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm * decimalDois;
 
@@ -497,32 +497,32 @@ function Multiplicar(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
-        }   
-    }else if (SouOctal == 1){
-    
+        }
+    } else if (SouOctal == 1) {
 
-        let decimalUm = parseInt (PrimeiroValor, 8);
-        let decimalDois = parseInt (SegundoValor, 8);
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+        let decimalUm = parseInt(PrimeiroValor, 8);
+        let decimalDois = parseInt(SegundoValor, 8);
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm * decimalDois;
 
@@ -532,44 +532,44 @@ function Multiplicar(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
-        }   
+        }
     }
 
 
 }
 
-function Subtrair(){
+function Subtrair() {
 
     var PrimeiroValor = inp_primeiroValor.value;
     var SegundoValor = inp_segundoValor.value;
     var Calcular = 0;
-    
 
-    if (SouHexadecimal == 1){
-        
 
-        let decimalUm = parseInt (PrimeiroValor, 16);
-        let decimalDois = parseInt (SegundoValor, 16);
+    if (SouHexadecimal == 1) {
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+
+        let decimalUm = parseInt(PrimeiroValor, 16);
+        let decimalDois = parseInt(SegundoValor, 16);
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm - decimalDois;
 
@@ -579,33 +579,33 @@ function Subtrair(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
         }
 
-    }else if (SouDecimal == 1){
-        
+    } else if (SouDecimal == 1) {
 
-        let decimalUm = parseInt (PrimeiroValor, 10);
-        let decimalDois = parseInt (SegundoValor, 10);
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+        let decimalUm = parseInt(PrimeiroValor, 10);
+        let decimalDois = parseInt(SegundoValor, 10);
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm - decimalDois;
 
@@ -615,32 +615,32 @@ function Subtrair(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
-        }   
-    }else if (SouBinario == 1){
-        
+        }
+    } else if (SouBinario == 1) {
 
-        let decimalUm = parseInt (PrimeiroValor, 2);
-        let decimalDois = parseInt (SegundoValor, 2);
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+        let decimalUm = parseInt(PrimeiroValor, 2);
+        let decimalDois = parseInt(SegundoValor, 2);
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm - decimalDois;
 
@@ -650,32 +650,32 @@ function Subtrair(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
-        }   
-    }else if (SouOctal == 1){
-        
+        }
+    } else if (SouOctal == 1) {
 
-        let decimalUm = parseInt (PrimeiroValor, 8);
-        let decimalDois = parseInt (SegundoValor, 8);
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
+        let decimalUm = parseInt(PrimeiroValor, 8);
+        let decimalDois = parseInt(SegundoValor, 8);
+
+
+        if (isNaN(decimalUm) && isNaN(decimalDois)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
+
+        } else if (isNaN(decimalUm)) {
             inp_primeiroValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
+
+        } else if (isNaN(decimalDois)) {
             inp_segundoValor.value = 'valor inserido está incorreto.'
             div_resultadoCalculo.innerHTML = ''
-        }else{
+        } else {
 
             Calcular = decimalUm - decimalDois;
 
@@ -685,169 +685,176 @@ function Subtrair(){
             let resultadoDecimal = Calcular;
 
             div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
-        }   
+        }
     }
 
 
 }
 
 
-function Dividir(){
+function Dividir() {
 
     var PrimeiroValor = inp_primeiroValor.value;
     var SegundoValor = inp_segundoValor.value;
     var Calcular = 0;
-    var resto = PrimeiroValor/SegundoValor;
-    var naotemResto = resto % 2
 
-    
-    if (SouHexadecimal == 1){
-        
 
-        let decimalUm = parseInt (PrimeiroValor, 16);
-        let decimalDois = parseInt (SegundoValor, 16);
+    if (SegundoValor == 0) {
 
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-        }else{
+        inp_segundoValor.value = 'Insira um valor diferente de zero!'
 
-            Calcular = decimalUm / decimalDois;
+    } else {
 
-            let resultadoHexadecimal = Calcular.toString(16);
-            let resultadoBinario = Calcular.toString(2);
-            let resultadoOctal = Calcular.toString(8);
-            let resultadoDecimal = Calcular;
 
-            div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
+        if (SouHexadecimal == 1) {
+
+
+            let decimalUm = parseInt(PrimeiroValor, 16);
+            let decimalDois = parseInt(SegundoValor, 16);
+
+
+            if (isNaN(decimalUm) && isNaN(decimalDois)) {
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+
+            } else if (isNaN(decimalUm)) {
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+
+            } else if (isNaN(decimalDois)) {
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            } else {
+
+                Calcular = decimalUm / decimalDois;
+
+                let resultadoHexadecimal = Calcular.toString(16);
+                let resultadoBinario = Calcular.toString(2);
+                let resultadoOctal = Calcular.toString(8);
+                let resultadoDecimal = Calcular;
+
+                div_resultadoCalculo.innerHTML = `
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
                 Binario: ${resultadoBinario}.<br>
                 Decimal: ${resultadoDecimal}.<br>
                 Octal: ${resultadoOctal}.`
 
+            }
+
+        } else if (SouDecimal == 1) {
+
+
+            let decimalUm = parseInt(PrimeiroValor, 10);
+            let decimalDois = parseInt(SegundoValor, 10);
+
+
+            if (isNaN(decimalUm) && isNaN(decimalDois)) {
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+
+            } else if (isNaN(decimalUm)) {
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+
+            } else if (isNaN(decimalDois)) {
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            } else {
+
+                Calcular = decimalUm / decimalDois;
+
+                let resultadoHexadecimal = Calcular.toString(16);
+                let resultadoBinario = Calcular.toString(2);
+                let resultadoOctal = Calcular.toString(8);
+                let resultadoDecimal = Calcular;
+
+                div_resultadoCalculo.innerHTML = `
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
+                Binario: ${resultadoBinario}.<br>
+                Decimal: ${resultadoDecimal}.<br>
+                Octal: ${resultadoOctal}.`
+
+            }
+        } else if (SouBinario == 1) {
+
+
+            let decimalUm = parseInt(PrimeiroValor, 2);
+            let decimalDois = parseInt(SegundoValor, 2);
+
+
+            if (isNaN(decimalUm) && isNaN(decimalDois)) {
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+
+            } else if (isNaN(decimalUm)) {
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+
+            } else if (isNaN(decimalDois)) {
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            } else {
+
+                Calcular = decimalUm / decimalDois;
+
+                let resultadoHexadecimal = Calcular.toString(16);
+                let resultadoBinario = Calcular.toString(2);
+                let resultadoOctal = Calcular.toString(8);
+                let resultadoDecimal = Calcular;
+
+                div_resultadoCalculo.innerHTML = `
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
+                Binario: ${resultadoBinario}.<br>
+                Decimal: ${resultadoDecimal}.<br>
+                Octal: ${resultadoOctal}.`
+
+            }
+        } else if (SouOctal == 1) {
+
+
+            let decimalUm = parseInt(PrimeiroValor, 8);
+            let decimalDois = parseInt(SegundoValor, 8);
+
+
+
+            if (isNaN(decimalUm) && isNaN(decimalDois)) {
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+
+            } else if (isNaN(decimalUm)) {
+                inp_primeiroValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+
+            } else if (isNaN(decimalDois)) {
+                inp_segundoValor.value = 'valor inserido está incorreto.'
+                div_resultadoCalculo.innerHTML = ''
+            } else {
+
+                Calcular = decimalUm / decimalDois;
+
+                let resultadoHexadecimal = Calcular.toString(16);
+                let resultadoBinario = Calcular.toString(2);
+                let resultadoOctal = Calcular.toString(8);
+                let resultadoDecimal = Calcular;
+
+                div_resultadoCalculo.innerHTML = `
+                Hexadecimal: ${resultadoHexadecimal.toUpperCase()}.<br>
+                Binario: ${resultadoBinario}.<br>
+                Decimal: ${resultadoDecimal}.<br>
+                Octal: ${resultadoOctal}.`
+
+            }
         }
 
-    }else if (SouDecimal == 1){
-        
-
-        let decimalUm = parseInt (PrimeiroValor, 10);
-        let decimalDois = parseInt (SegundoValor, 10);
-
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-        }else{
-
-            Calcular = decimalUm / decimalDois;
-
-            let resultadoHexadecimal = Calcular.toString(16);
-            let resultadoBinario = Calcular.toString(2);
-            let resultadoOctal = Calcular.toString(8);
-            let resultadoDecimal = Calcular;
-
-            div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
-                Binario: ${resultadoBinario}.<br>
-                Decimal: ${resultadoDecimal}.<br>
-                Octal: ${resultadoOctal}.`
-
-        }   
-    }else if (SouBinario == 1){
-        
-
-        let decimalUm = parseInt (PrimeiroValor, 2);
-        let decimalDois = parseInt (SegundoValor, 2);
-
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-        }else{
-
-            Calcular = decimalUm / decimalDois;
-
-            let resultadoHexadecimal = Calcular.toString(16);
-            let resultadoBinario = Calcular.toString(2);
-            let resultadoOctal = Calcular.toString(8);
-            let resultadoDecimal = Calcular;
-
-            div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
-                Binario: ${resultadoBinario}.<br>
-                Decimal: ${resultadoDecimal}.<br>
-                Octal: ${resultadoOctal}.`
-
-        }   
-    }else if (SouOctal == 1){
-        
-
-        let decimalUm = parseInt (PrimeiroValor, 8);
-        let decimalDois = parseInt (SegundoValor, 8);
-
-        
-        
-        if (isNaN(decimalUm) && isNaN(decimalDois)){
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-            
-        }else if(isNaN(decimalUm)){ 
-            inp_primeiroValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-            
-        }else if (isNaN(decimalDois)){
-            inp_segundoValor.value = 'valor inserido está incorreto.'
-            div_resultadoCalculo.innerHTML = ''
-        }else{
-
-            Calcular = decimalUm / decimalDois;
-
-            let resultadoHexadecimal = Calcular.toString(16);
-            let resultadoBinario = Calcular.toString(2);
-            let resultadoOctal = Calcular.toString(8);
-            let resultadoDecimal = Calcular;
-
-            div_resultadoCalculo.innerHTML = `
-                Hexadecimal: ${resultadoHexadecimal}.<br>
-                Binario: ${resultadoBinario}.<br>
-                Decimal: ${resultadoDecimal}.<br>
-                Octal: ${resultadoOctal}.`
-
-        }   
     }
 
 
@@ -901,7 +908,7 @@ function VoltarHome() {
     div_operacoes.style.display = 'none';
 }
 
-    // TRANSFORMANDO O NÚMERO DECIMAL EM OCTAL
+// TRANSFORMANDO O NÚMERO DECIMAL EM OCTAL
 function DecimalOctal() {
     var decimal = Number(ipt_Decimal.value);
     let Octal = decimal.toString(8);
@@ -913,7 +920,7 @@ function DecimalOctal() {
         div_resultado.innerHTML = (`${Octal}`)
     }
 }
-    // TRANSFORMANDO O NÚMERO DECIMAL EM HEXADECIMAL
+// TRANSFORMANDO O NÚMERO DECIMAL EM HEXADECIMAL
 function DecimalHexadecimal() {
     var decimal = Number(ipt_Decimal.value);
     let hexadecimal = decimal.toString(16);
@@ -922,10 +929,10 @@ function DecimalHexadecimal() {
         ipt_Decimal.value = 'Número inválido!';
         div_resultado.innerHTML = '';
     } else {
-        div_resultado.innerHTML = (`${hexadecimal}`)
+        div_resultado.innerHTML = (`${hexadecimal.toUpperCase()}`)
     }
 }
-    // TRANSFORMANDO O NÚMERO DECIMAL EM BINÁRIO
+// TRANSFORMANDO O NÚMERO DECIMAL EM BINÁRIO
 function DecimalBinario() {
     var decimal = Number(ipt_Decimal.value);
     let binario = decimal.toString(2);
@@ -937,11 +944,11 @@ function DecimalBinario() {
         div_resultado.innerHTML = (`${binario}`)
     }
 }
-    
-    // TRANSFORMANDO O NÚMERO OCTAL EM DECIMAL
+
+// TRANSFORMANDO O NÚMERO OCTAL EM DECIMAL
 function OctalDecimal() {
     var octal = Number(ipt_Octal.value);
-    let decimal = parseInt(octal, 8) 
+    let decimal = parseInt(octal, 8)
 
     if (isNaN(decimal)) {
         ipt_Octal.value = 'Número inválido!';
@@ -950,26 +957,26 @@ function OctalDecimal() {
         div_resultado.innerHTML = (`${decimal}`)
     }
 }
-    // TRANSFORMANDO O NÚMERO OCTAL EM HEXADECIMAL
+// TRANSFORMANDO O NÚMERO OCTAL EM HEXADECIMAL
 function OctalHexadecimal() {
     var octal = Number(ipt_Octal.value);
     let decimal = parseInt(octal, 8) // Transformando o número octal em decimal
     let hexadecimal = decimal.toString(16) // Transformando o número decimal em hexadecimal
 
-    if (isNaN(hexadecimal)) {
+    if (isNaN(octal)) {
         ipt_Octal.value = 'Número inválido!';
         div_resultado.innerHTML = '';
     } else {
-        div_resultado.innerHTML = (`${hexadecimal}`)
+        div_resultado.innerHTML = (`${hexadecimal.toUpperCase()}`)
     }
 }
-    // TRANSFORMANDO O NÚMERO OCTAL EM BINÁRIO
+// TRANSFORMANDO O NÚMERO OCTAL EM BINÁRIO
 function OctalBinario() {
     var octal = Number(ipt_Octal.value);
     let decimal = parseInt(octal, 8) // Transformando o número octal em decimal
     let binario = decimal.toString(2) // Transformando o número decimal em binário
 
-    if (isNaN(binario)) {
+    if (isNaN(octal)) {
         ipt_Octal.value = 'Número inválido!';
         div_resultado.innerHTML = '';
     } else {
@@ -977,7 +984,7 @@ function OctalBinario() {
     }
 }
 
-    // TRANSFORMANDO O NÚMERO BINÁRIO EM OCTAL
+// TRANSFORMANDO O NÚMERO BINÁRIO EM OCTAL
 function BinarioOctal() {
     var binario = Number(ipt_Binario.value);
     let decimal = parseInt(binario, 2) // Transformando o número binário em decimal
@@ -990,7 +997,7 @@ function BinarioOctal() {
         div_resultado.innerHTML = (`${octal}`)
     }
 }
-    // TRANSFORMANDO O NÚMERO BINÁRIO EM HEXADECIMAL
+// TRANSFORMANDO O NÚMERO BINÁRIO EM HEXADECIMAL
 function BinarioHexadecimal() {
     var binario = Number(ipt_Binario.value);
     let decimal = parseInt(binario, 2) // Transformando o número binário em decimal
@@ -1000,10 +1007,10 @@ function BinarioHexadecimal() {
         ipt_Binario.value = 'Número inválido!';
         div_resultado.innerHTML = '';
     } else {
-        div_resultado.innerHTML = (`${hexadecimal}`)
+        div_resultado.innerHTML = (`${hexadecimal.toUpperCase()}`)
     }
 }
-    // TRANSFORMANDO O NÚMERO BINÁRIO EM DECIMAL
+// TRANSFORMANDO O NÚMERO BINÁRIO EM DECIMAL
 function BinarioDecimal() {
     var binario = Number(ipt_Binario.value);
     let decimal = parseInt(binario, 2)
@@ -1016,7 +1023,7 @@ function BinarioDecimal() {
     }
 }
 
-    // TRANSFORMANDO O NÚMERO HEXADECIMAL EM DECIMAL
+// TRANSFORMANDO O NÚMERO HEXADECIMAL EM DECIMAL
 function HexadecimalDecimal() {
     var hexadecimal = ipt_Hexadecimal.value
     let decimal = parseInt(hexadecimal, 16)
@@ -1028,7 +1035,7 @@ function HexadecimalDecimal() {
         div_resultado.innerHTML = (`${decimal}`)
     }
 }
-    // TRANSFORMANDO O NÚMERO HEXADECIMAL EM OCTAL
+// TRANSFORMANDO O NÚMERO HEXADECIMAL EM OCTAL
 function HexadecimalOctal() {
     var hexadecimal = ipt_Hexadecimal.value
     let decimal = parseInt(hexadecimal, 16) // Transformando o número hexadecimal em decimal
@@ -1041,7 +1048,7 @@ function HexadecimalOctal() {
         div_resultado.innerHTML = (`${octal}`)
     }
 }
-    // TRANSFORMANDO O NÚMERO HEXADECIMAL EM BINARIO
+// TRANSFORMANDO O NÚMERO HEXADECIMAL EM BINARIO
 function HexadecimalBinario() {
     var hexadecimal = ipt_Hexadecimal.value
     let decimal = parseInt(hexadecimal, 16) // Transformando o número hexadecimal em decimal
